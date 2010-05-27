@@ -1,0 +1,6 @@
+  <tr>
+    <td><%=h categoria.nome_categoria %></td>
+    <td><%= link_to 'Visualizar', categoria %></td>
+    <td><%= link_to 'Editar', edit_categoria_path(categoria) %></td>
+    <td><%= link_to 'Excluir', categoria, :confirm => 'Confirma exclusão?', :method => :delete %></td>
+  </tr>

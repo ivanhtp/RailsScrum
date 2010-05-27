@@ -1,0 +1,15 @@
+<% form_for(@estoria) do |f| %>
+	<h4>Titulo</h4>
+	<%= f.text_field :titulo %>
+	
+	<h4>Descricao</h4>
+	<%= f.text_area :descricao %>
+	
+	<h4>Categoria</h4>
+	<%= f.select :categoria_id, Categoria.find(:all).collect{ |item| [item.nome_categoria, item.id]} %>
+	
+	<h4>Data</h4>
+	<%= f.date_select(:data, :order => [:day, :month, :year]) %>
+	<br />
+	<%= f.submit "Enviar" %>
+<% end %>

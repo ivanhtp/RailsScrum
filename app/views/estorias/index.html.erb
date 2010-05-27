@@ -1,0 +1,13 @@
+<h1>Listagem de Est—rias</h1>
+<% for estoria in @estorias %>
+
+	<h2>
+	<%= estoria.categoria.nome_categoria%>
+	<%= link_to estoria.titulo, estoria_path(estoria) %>
+	</h2>
+
+<% end %>
+
+<br />
+<p><%= link_to 'Cadastrar nova est—ria', new_estoria_path %></p>
+	

@@ -1,0 +1,9 @@
+<h2><%= @estoria.titulo %></h2>
+<br />
+<h3>Descrição</h3>
+<p><%= @estoria.descricao %></p>
+<br /><br />
+<h4>Data para entrega da estória: <%= @estoria.data.strftime("%d/%m/%y") %></h4>
+
+<p><%= link_to 'Editar', edit_estoria_path %></p>
+<p><%= link_to 'Excluir', estoria_path, :confirm => 'Confirma exclusão?', :method => :delete  %></p>
