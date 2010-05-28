@@ -15493,3 +15493,1073 @@ ActionController::RoutingError (No route matches "/stylesheets/images/footer-bac
   
 
 Rendering rescues/layout (not_found)
+/!\ FAILSAFE /!\  Fri May 28 11:01:19 -0300 2010
+  Status: 500 Internal Server Error
+  Host '192.168.5.254' is not allowed to connect to this MySQL server
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri May 28 11:01:26 -0300 2010
+  Status: 500 Internal Server Error
+  Host '192.168.5.254' is not allowed to connect to this MySQL server
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri May 28 11:01:28 -0300 2010
+  Status: 500 Internal Server Error
+  Host '192.168.5.254' is not allowed to connect to this MySQL server
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri May 28 11:07:33 -0300 2010
+  Status: 500 Internal Server Error
+  Host '192.168.5.254' is not allowed to connect to this MySQL server
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri May 28 11:07:38 -0300 2010
+  Status: 500 Internal Server Error
+  Host '192.168.5.254' is not allowed to connect to this MySQL server
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri May 28 11:07:40 -0300 2010
+  Status: 500 Internal Server Error
+  Host '192.168.5.254' is not allowed to connect to this MySQL server
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri May 28 11:07:43 -0300 2010
+  Status: 500 Internal Server Error
+  Host '192.168.5.254' is not allowed to connect to this MySQL server
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri May 28 11:10:57 -0300 2010
+  Status: 500 Internal Server Error
+  Host '192.168.5.254' is not allowed to connect to this MySQL server
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri May 28 11:11:03 -0300 2010
+  Status: 500 Internal Server Error
+  Host '192.168.5.254' is not allowed to connect to this MySQL server
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri May 28 11:11:07 -0300 2010
+  Status: 500 Internal Server Error
+  Host '192.168.5.254' is not allowed to connect to this MySQL server
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/Program Files/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EstoriasController#index (for 127.0.0.1 at 2010-05-28 11:12:09) [GET]
+  [4;36;1mEstoria Load (4.0ms)[0m   [0;1mSELECT * FROM `estorias` [0m
+Rendering template within layouts/application
+Rendering estorias/index
+  [4;35;1mEstoria Columns (55.0ms)[0m   [0mSHOW FIELDS FROM `estorias`[0m
+  [4;36;1mCategoria Columns (11.0ms)[0m   [0;1mSHOW FIELDS FROM `categorias`[0m
+  [4;35;1mCategoria Load (2.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCategoria Load (3.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+Completed in 2415ms (View: 2289, DB: 79) | 200 OK [http://localhost/estorias/]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 11:12:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/footer-back-issue-sprite-trans-2.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 11:12:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/footer-cover-shadow-small-trans.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 11:12:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/footer-bg.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EstoriasController#Scroll Magazine_files to gif (for 127.0.0.1 at 2010-05-28 11:12:13) [GET]
+  Parameters: {"id"=>"g"}
+
+ActionController::UnknownAction (No action responded to Scroll Magazine_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EstoriasController#Scroll Magazine_files to png (for 127.0.0.1 at 2010-05-28 11:12:13) [GET]
+  Parameters: {"id"=>"cover-number-1"}
+
+ActionController::UnknownAction (No action responded to Scroll Magazine_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EstoriasController#Scroll Magazine_files to png (for 127.0.0.1 at 2010-05-28 11:12:13) [GET]
+  Parameters: {"id"=>"scroll-logo-trans"}
+
+ActionController::UnknownAction (No action responded to Scroll Magazine_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EstoriasController#Scroll Magazine_files to png (for 127.0.0.1 at 2010-05-28 11:12:19) [GET]
+  Parameters: {"id"=>"scroll-logo-trans"}
+
+ActionController::UnknownAction (No action responded to Scroll Magazine_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EstoriasController#Scroll Magazine_files to gif (for 127.0.0.1 at 2010-05-28 11:12:19) [GET]
+  Parameters: {"id"=>"g"}
+
+ActionController::UnknownAction (No action responded to Scroll Magazine_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EstoriasController#Scroll Magazine_files to png (for 127.0.0.1 at 2010-05-28 11:12:19) [GET]
+  Parameters: {"id"=>"cover-number-1"}
+
+ActionController::UnknownAction (No action responded to Scroll Magazine_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 11:12:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/footer-back-issue-sprite-trans-2.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 11:12:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/footer-bg.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (3.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 11:12:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/footer-cover-shadow-small-trans.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EstoriasController#index (for 127.0.0.1 at 2010-05-28 13:37:24) [GET]
+  [4;36;1mEstoria Load (28.0ms)[0m   [0;1mSELECT * FROM `estorias` [0m
+Rendering template within layouts/application
+Rendering estorias/index
+  [4;35;1mEstoria Columns (39.0ms)[0m   [0mSHOW FIELDS FROM `estorias`[0m
+  [4;36;1mCategoria Columns (553.0ms)[0m   [0;1mSHOW FIELDS FROM `categorias`[0m
+  [4;35;1mCategoria Load (26.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCategoria Load (26.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+Completed in 984ms (View: 292, DB: 677) | 200 OK [http://localhost/]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 13:37:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/footer-bg.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 13:37:26) [GET]
+
+ActionController::RoutingError (No route matches "/Scroll%20Magazine_files/cover-number-1.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (27.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (26.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 13:37:27) [GET]
+
+ActionController::RoutingError (No route matches "/Scroll%20Magazine_files/g.gif" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 13:37:27) [GET]
+
+ActionController::RoutingError (No route matches "/Scroll%20Magazine_files/scroll-logo-trans.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 13:37:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/footer-cover-shadow-small-trans.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 13:37:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/footer-back-issue-sprite-trans-2.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (3.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 13:48:27) [GET]
+
+ActionController::RoutingError (No route matches "/Scroll%20Magazine_files/scroll-logo-trans.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 13:48:27) [GET]
+
+ActionController::RoutingError (No route matches "/Scroll%20Magazine_files/cover-number-1.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 13:48:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/footer-bg.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 13:48:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/footer-cover-shadow-small-trans.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 13:48:27) [GET]
+
+ActionController::RoutingError (No route matches "/Scroll%20Magazine_files/g.gif" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 13:48:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/footer-back-issue-sprite-trans-2.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
