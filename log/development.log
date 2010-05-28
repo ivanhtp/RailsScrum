@@ -16563,3 +16563,554 @@ ActionController::RoutingError (No route matches "/stylesheets/images/footer-bac
   C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EstoriasController#index (for 127.0.0.1 at 2010-05-28 14:34:54) [GET]
+  [4;35;1mEstoria Load (3.0ms)[0m   [0mSELECT * FROM `estorias` [0m
+Rendering template within layouts/application
+Rendering estorias/index
+  [4;36;1mEstoria Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `estorias`[0m
+  [4;35;1mCategoria Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `categorias`[0m
+  [4;36;1mCategoria Load (2.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCategoria Load (2.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+Completed in 149ms (View: 126, DB: 20) | 200 OK [http://localhost/]
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:34:54) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:34:56) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery-1.4.2.min.js" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:34:56) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery-ui-1.8.custom.min.js" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:34:56) [GET]
+
+ActionController::RoutingError (No route matches "/Scroll%20Magazine_files/scroll-logo-trans.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:34:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/footer-bg.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EstoriasController#index (for 127.0.0.1 at 2010-05-28 14:37:42) [GET]
+  [4;36;1mEstoria Load (4.0ms)[0m   [0;1mSELECT * FROM `estorias` [0m
+Rendering template within layouts/application
+Rendering estorias/index
+  [4;35;1mEstoria Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `estorias`[0m
+  [4;36;1mCategoria Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `categorias`[0m
+  [4;35;1mCategoria Load (10.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCategoria Load (2.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+Completed in 154ms (View: 114, DB: 37) | 200 OK [http://localhost/]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EstoriasController#index (for 127.0.0.1 at 2010-05-28 14:37:43) [GET]
+  [4;35;1mEstoria Load (3.0ms)[0m   [0mSELECT * FROM `estorias` [0m
+Rendering template within layouts/application
+Rendering estorias/index
+  [4;36;1mEstoria Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `estorias`[0m
+  [4;35;1mCategoria Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `categorias`[0m
+  [4;36;1mCategoria Load (1.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCategoria Load (2.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+Completed in 127ms (View: 106, DB: 18) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:37:43) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (7.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:37:45) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery-1.4.2.min.js" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:37:45) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery-ui-1.8.custom.min.js" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:37:45) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery-1.4.2.min.js" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:37:45) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery-ui-1.8.custom.min.js" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:37:45) [GET]
+
+ActionController::RoutingError (No route matches "/Scroll%20Magazine_files/scroll-logo-trans.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:37:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/footer-bg.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EstoriasController#index (for 127.0.0.1 at 2010-05-28 14:40:14) [GET]
+  [4;36;1mEstoria Load (43.0ms)[0m   [0;1mSELECT * FROM `estorias` [0m
+Rendering template within layouts/application
+Rendering estorias/index
+  [4;35;1mEstoria Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `estorias`[0m
+  [4;36;1mCategoria Columns (565.0ms)[0m   [0;1mSHOW FIELDS FROM `categorias`[0m
+  [4;35;1mCategoria Load (2.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCategoria Load (10.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+Completed in 753ms (View: 121, DB: 632) | 200 OK [http://localhost/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:40:15) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EstoriasController#index (for 127.0.0.1 at 2010-05-28 14:40:15) [GET]
+  [4;35;1mEstoria Load (3.0ms)[0m   [0mSELECT * FROM `estorias` [0m
+Rendering template within layouts/application
+Rendering estorias/index
+  [4;36;1mEstoria Columns (49.0ms)[0m   [0;1mSHOW FIELDS FROM `estorias`[0m
+  [4;35;1mCategoria Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `categorias`[0m
+  [4;36;1mCategoria Load (2.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCategoria Load (2.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+Completed in 169ms (View: 103, DB: 94) | 200 OK [http://localhost/]
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:40:16) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:40:17) [GET]
+
+ActionController::RoutingError (No route matches "/Scroll%20Magazine_files/scroll-logo-trans.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:40:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/footer-bg.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EstoriasController#index (for 127.0.0.1 at 2010-05-28 14:41:44) [GET]
+  [4;36;1mEstoria Load (11.0ms)[0m   [0;1mSELECT * FROM `estorias` [0m
+Rendering template within layouts/application
+Rendering estorias/index
+  [4;35;1mEstoria Columns (701.0ms)[0m   [0mSHOW FIELDS FROM `estorias`[0m
+  [4;36;1mCategoria Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `categorias`[0m
+  [4;35;1mCategoria Load (2.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCategoria Load (3.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+Completed in 841ms (View: 112, DB: 725) | 200 OK [http://localhost/]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:41:45) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:41:46) [GET]
+
+ActionController::RoutingError (No route matches "/Scroll%20Magazine_files/scroll-logo-trans.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (39.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:41:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/footer-bg.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EstoriasController#index (for 127.0.0.1 at 2010-05-28 14:43:46) [GET]
+  [4;35;1mEstoria Load (4.0ms)[0m   [0mSELECT * FROM `estorias` [0m
+Rendering template within layouts/application
+Rendering estorias/index
+  [4;36;1mEstoria Columns (123.0ms)[0m   [0;1mSHOW FIELDS FROM `estorias`[0m
+  [4;35;1mCategoria Columns (514.0ms)[0m   [0mSHOW FIELDS FROM `categorias`[0m
+  [4;36;1mCategoria Load (3.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCategoria Load (3.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categorias` WHERE (`categorias`.`id` = 1) [0m
+Completed in 773ms (View: 119, DB: 651) | 200 OK [http://localhost/]
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:43:47) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:43:48) [GET]
+
+ActionController::RoutingError (No route matches "/Scroll%20Magazine_files/scroll-logo-trans.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-28 14:43:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/footer-bg.png" with {:method=>:get}):
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
