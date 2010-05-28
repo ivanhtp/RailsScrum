@@ -17114,3 +17114,36 @@ ActionController::RoutingError (No route matches "/stylesheets/images/footer-bg.
   C:/Program Files/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategorias (20100328001)
+Migrating to CreateEstorias (20100328162244)
+Migrating to CreateUsers (20100528183921)
+  [4;36;1mSQL (92.0ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100528183921')[0m
+Migrating to CreateTarefas (20100528184835)
+  [4;36;1mSQL (129.0ms)[0m   [0;1mCREATE TABLE `tarefas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100528184835')[0m
+Migrating to CreateAndamentos (20100528192414)
+  [4;36;1mSQL (139.0ms)[0m   [0;1mCREATE TABLE `andamentos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nome_andamento` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100528192414')[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `andamentos`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `andamentos`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW KEYS FROM `andamentos`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `categorias`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `categorias`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW KEYS FROM `categorias`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `estorias`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `estorias`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW KEYS FROM `estorias`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `tarefas`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mdescribe `tarefas`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `tarefas`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
