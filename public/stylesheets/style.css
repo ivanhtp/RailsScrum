@@ -7,26 +7,11 @@ Author: Guy Leech with Veerle Pieters */
 /* CSS Reset thanks to Eric Meyer */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}:focus{outline:0;}body{line-height:1.5;color:black;background:white;}ol,ul{list-style:none;}table{border-collapse:separate;border-spacing:0;}caption,th,td{text-align:left;font-weight:normal;}blockquote:before,blockquote:after,q:before,q:after{content:"";}blockquote,q{quotes:"""";}
 
-/* Generic hacky styles */
-.clearfix {
-	display: inline-block; }
-* html body .clearfix {
-	height: auto; }
-.clearfix:after {
-	content: "."; 
-	display: block; 
-	height: 0; 
-	clear: both; 
-	visibility: hidden; }
-.hidden {
-	position: absolute;
-	top: -999999em;
-	left: -999999em; }
 	
 body, input, textarea, #footer h4 {
 	font-family: "Avenir LT 35 Light", "Avenir 35 Light", "Avenir Light", Avenir-Light, "Futura LT Light", "Futura Light", Futura-Light, "Century Gothic LT Light", "Century Gothic Light", CenturyGothic-Light, "Avant Garde LT Light", "Avant Garde Light", AvantGarde-Light, "Twentieth Century LT Light", "Twentieth Century Light", TwentiethCentury-Light, "Helvetica Neue 35 Light", "Helvetica Neue Light", HelveticaNeue-Light, "Helvetica Neue", HelveticaNeue, "Helvetica Light", Helvetica-Light, Helvetica, Arial, sans-serif;
 	font-weight: 300; }
-h2, h5, legend, strong, th, blockquote cite, #label abbr, #navigation, .issue-number, .article-navigation a, button, .button, #footer h3, .error, .success {
+h2, h5, legend, strong, th, blockquote cite, #label abbr, #navigation,  .article-navigation a, button, .button, #footer h3, .error, .success {
 	font-family: "Avenir LT 65 Medium", "Avenir 65 Medium", "Avenir Medium", Avenir-Medium, Avenir, "Futura LT Medium", "Futura Medium", Futura-Medium, Futura, "Century Gothic LT Medium", "Cantury Gothic Medium", CenturyGothic-Medium, "Century Gothic", CenturyGothic, "Avant Garde LT Medium", "Avant Garde Medium", AvantGarde-Medium, "Avant Garde", AvantGarde, "Twentieth Century LT Medium", "Twentieth Century Medium", TwentiethCentury-Medium, "Twentieth Century", TwentiethCentury, Helvetica, Arial, sans-serif;
 	font-weight: bold; }
 
@@ -34,7 +19,7 @@ body {
 	font-size: .9375em;
 	line-height: 1.333em;
 	color: #5c5c5c;
-	background: #fff url(images/body-bg.jpg) repeat center left;
+	background: #fff url(../images/body-bg.jpg) repeat center left;
 	border-top: 10px solid #e2e4de; }
 
 #header {
@@ -118,6 +103,26 @@ body {
 #navigation .active a {
 	color: #fff;
 	background: #cd0007; }
+	
+#menu_items {
+	padding-bottom: 1em;
+}
+
+#menu_items a, #menu_items .active a, #menu_items p {
+	color:#5C5C5C;
+	margin-bottom:3.3333em;
+	line-height:1.333em;
+	border:0 none;
+	font-size:100%;
+	height:1.5em;
+	/*line-height:1.333em;	*/
+	margin:0;
+	outline:0 none;
+	padding:0;
+	vertical-align:baseline;
+	
+ }	
+	
 
 #content {
 	width: 520px;
@@ -143,20 +148,8 @@ h1 {
 	line-height: 1.19em;
 	vertical-align: bottom;
 	color: #87cada; }
-h1.issue {
-	width: 200px;
-	float: right;
-	padding-left: 20px;
-	margin-left: -20px;
-	background: url(images/angled-shadow-trans.png) no-repeat 0 37px; }
-.issue-list h1 {
-	font-size: 1.866em;
-	line-height: 1.071em;
-	margin-bottom: 1.071em;
-	background: url(images/angled-shadow-trans.png) 262px 37px no-repeat; }
-.issue-list h1 a {
-	display: block;
-	width: 340px; }
+
+
 
 h1 a {
 	color: #87cada;
@@ -238,55 +231,6 @@ sub {
 	vertical-align: sub;
 	font-size: .7em; }
 
-.issue-number {
-	background: #bebebe;
-	font-size: 2em;
-	line-height: .5em;
-	color: #fff;
-	width: 1.666em;
-	height: 1.041em;
-	display: block;
-	text-align: center;
-	padding-top: .624em; }
-h1 .issue-number {
-	font-size: .857em;
-	margin-bottom: .694em; }
-h1 a:hover .issue-number, h1 a:focus .issue-number {
-	background: #cd0027; }
-h1 a:active .issue-number {
-	background: #5c5c5c; }
-
-.info, blockquote {
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-style: italic;
-	color: #a4a8a0;
-	font-size: .933em;
-	line-height: 1.428em;
-	text-transform: lowercase; }
-.contents .info, .blog-list .info {
-	font-size: .8em;
-	line-height: 1.666em; }
-.info a, .info cite, blockquote, .info abbr {
-	text-transform: none; }
-.info cite {
-	color: #87cada; }
-
-.comments-link {
-	color: #a4a8a0;
-	border: none;
-	background: url(images/author-photo-sprite-trans.png) no-repeat -206px 0;
-	padding-left: 17px; }
-.comments-link:visited {
-	border: none;
-	color: #a4a8a0; }
-.comments-link:hover, .comments-link:focus {
-	color: #cd0027;
-	border: none; }
-.comments-link:active {
-	color: #5c5c5c;
-	border: none;
-	background: url(images/author-photo-sprite-trans.png) no-repeat -206px 0; }
-
 blockquote {
 	margin: 0 0 1.333em -15px; }
 blockquote p {
@@ -304,25 +248,6 @@ blockquote cite {
 	font-style: normal;
 	color: #5c5c5c; }
 
-.pull-quote {
-	float: left;
-	width: 240px;
-	margin: 10em 0 0 -320px;
-	font-size: 1.6em;
-	line-height: 1.25em;
-	text-transform: none;
-	color: #87cada; }
-.pull-quote p {
-	border-left: none;
-	padding-left: 0; }
-
-.intro {
-	font-size: 1.333em;
-	line-height: 1.25em;
-	margin-bottom: 1.25em;
-	color: #8c8c8c; }
-.home .intro {
-	margin-bottom: 2.5em; }
 img {
 	float: right;
 	margin: 0 0 1.333em 1.333em;
@@ -362,66 +287,6 @@ img {
 	background-color: #d1d2d0;
 	background-color: rgba(93, 94, 92, .3); }
 
-.article-navigation {
-	margin: 2.666em 0 3.999em 0;
-	background: url(images/angled-shadow-trans.png) 441px 100% no-repeat;
-	overflow: hidden; }
-.article-navigation a {
-	display: block;
-	background: #f1f1f1 url(images/article-nav-arrow-trans.png) no-repeat 10px 16px;
-	background-color: rgba(183, 183, 183, .2);
-	font-size: 1.2em;
-	line-height: .9em;
-	border: none;
-	padding: 1.125em 0 0 50px;
-	overflow: hidden;
-	color: #5c5c5c; }
-.article-navigation a:visited {
-	border: none;
-	color: #5c5c5c; }
-.article-navigation a:hover, .article-navigation a:focus {
-	background-color: #ebebeb;
-	background-color: rgba(183, 183, 183, .3);
-	border: none; }
-.article-navigation a:active {
-	background-color: #dedede;
-	background-color: rgba(183, 183, 183, .5);
-	border: none;
-	color: #fff!important; }
-.article-navigation .issue-number {
-	float: right;
-	margin: -.562em 0 0 0; }
-
-.action {
-	margin-bottom: 0;
-	background: url(images/arrow-trans.png) no-repeat top right; }
-.action:hover, .action:focus {
-	background-position: 100% -128px; }
-.action:active {
-	background: url(images/arrow-trans.png) no-repeat 100% -256px; }
-.action a {
-	display: block;
-	padding-right: 56px; }
-
-.more-link, .more-link:visited, .more-link-old, .more-link-old:visited {
-	display: block;
-	width: 28px;
-	height: 28px;
-	margin-top: 1.333em;
-	background: url(images/arrow-trans.png) no-repeat top left;
-	text-indent: -999999em;
-	border: none; }
-.more-link-old, .more-link-old:visited {
-	background-image: url(images/arrow-reverse-trans.png); }
-.more-link:hover, .more-link:focus, .more-link-old:hover, .more-link-old:focus {
-	background-position: 0 -128px;
-	border: none; }
-.more-link:active, .more-link-old:active {
-	background-position: 0 -256px;
-	border: none; }
-.page-nav .more-link {
-	margin: -28px 0 0 492px; }
-
 fieldset {
 	width: 360px; }
 legend {
@@ -449,7 +314,7 @@ input, textarea {
 	border: 1px solid #f0f0f0;
 	color: #acacac;
 	width: 360px;
-	background: #d8d8d8 url(images/input-bg.png) no-repeat top left;
+	background: #d8d8d8; 
 	font-size: 1em;
 	line-height: 1.333em; }
 input:focus, textarea:focus {
@@ -484,7 +349,7 @@ button:active, .button:active, .button a:active {
 	background: #e2e4de; }
 
 #footer {
-	background: #980000 url(images/footer-bg.png) repeat top left;
+	background: #980000;
 	color: #969696;
 	font-size: .8em;
 	line-height: 1.667em;
@@ -528,8 +393,7 @@ button:active, .button:active, .button a:active {
 	position: absolute;
 	top: 5.222em;
 	left: 0;
-	margin-bottom: 0;
-	background: url(images/footer-cover-shadow-small-trans.png) no-repeat bottom right; }
+	margin-bottom: 0; }
 #footer .footer-section-2 .cover img {
 	width: 136px; }
 #footer .footer-section-2 .cover:active img {
@@ -557,8 +421,7 @@ button:active, .button:active, .button a:active {
 	color: #999;
 	margin: 1.111em 0 0 0; }
 #footer .footer-section-2 .more-link {
-	margin-top: 1.667em;
-	background: url(images/footer-back-issue-sprite-trans-2.png) no-repeat -80px 0; }
+	margin-top: 1.667em; }
 #footer .footer-section-2 .more-link:hover, #footer .footer-section-2 .more-link:focus {
 	background-position: -80px -28px; }
 #footer .footer-section-2 .more-link:active {
@@ -567,22 +430,15 @@ button:active, .button:active, .button a:active {
 	position: absolute;
 	top: -23px;
 	right: 0;
-	background: url(images/footer-back-issue-sprite-trans-2.png) no-repeat;
 	padding: 0 0 246px 20px;
 	margin-bottom: 0; }
 #footer .footer-section-2 ol li {
 	margin-bottom: 2px; }
-#footer .footer-section-2 ol .issue-number {
-	font-size: 3em; }
+
 #footer .footer-section-2 ol a, #footer .footer-section-2 ol a:visited, #footer .footer-section-2 ol a:hover, #footer .footer-section-2 ol a:focus, #footer .footer-section-2 ol a:active {
 	border: none; }
-#footer .footer-section-2 ol a:hover .issue-number, #footer .footer-section-2 ol a:focus .issue-number {
-	color: #fff;
-	background: #cd0007;
-	cursor: pointer; }
-#footer .footer-section-2 ol a:active .issue-number {
-	background: #cd0007;
-	color: #000; }
+
+
 #footer #copyright {
 	clear: both;
 	width: 840px;
@@ -597,24 +453,3 @@ button:active, .button:active, .button a:active {
 #wpstats { /* Hide the stupid smiley face */
 	display: none; }
 	
-/*
-https://developer.mozilla.org/en/Mozilla_Quirks_Mode_Behavior
-The :hover pseudoclass will only be applied to links, images, and form controls, unless the selector includes tag names, ids, or attributes. 
-*/
-/*
-#qlauncher .qlauncher-shortcut-key *, 
-#qlauncher .qlauncher-shortcut-favicon *,
-#qlauncher .qlauncher-shortcut-label *
-{
-}
-*/
-
-.smarterfox-icon
-{
-    vertical-align: middle !important;
-    height: 24px !important; 
-    width: 21px !important;
-    margin-right: 3px !important;
-    margin-right: 3px !important;
-    display: inline-block !important;
-}
