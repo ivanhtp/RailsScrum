@@ -1,0 +1,12 @@
+<h1>Editing tarefa</h1>
+
+<% form_for(@tarefa) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @tarefa %> |
+<%= link_to 'Back', tarefas_path %>

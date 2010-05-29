@@ -1,0 +1,6 @@
+  <tr>
+    <td><%=h tarefa.titulo %></td>
+    <td><%= link_to 'Visualizar', tarefa %></td>
+    <td><%= link_to 'Editar', edit_tarefa_path(tarefa) %></td>
+    <td><%= link_to 'Excluir', tarefa, :confirm => 'Confirma exclusão?', :method => :delete %></td>
+  </tr>

@@ -22,7 +22,7 @@ development:
   pool: 5
   username: root
   password: root
-  host: 192.168.5.23
+  host: 192.168.2.41
   socket: /opt/local/var/run/mysql5/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -36,7 +36,7 @@ test:
   pool: 5
   username: root
   password: root
-  host: 192.168.5.23
+  host: 192.168.2.41
   socket: /opt/local/var/run/mysql5/mysqld.sock
 
 production:
@@ -47,5 +47,5 @@ production:
   pool: 5
   username: root
   password: root
-  host: 192.168.5.23
+  host: 192.168.2.41
   socket: /opt/local/var/run/mysql5/mysqld.sock

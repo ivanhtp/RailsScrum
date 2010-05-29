@@ -1,0 +1,17 @@
+<h1>Listing tarefas</h1>
+
+<table>
+  <tr>
+    <th>Nome tarefa</th>
+  </tr>
+
+<% @tarefas.each do |tarefa| %>
+	
+	<%= render :partial =>"lista", :locals =>{:tarefa => tarefa} %>
+	
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New tarefa', new_tarefa_path %>
