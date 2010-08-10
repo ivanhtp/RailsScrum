@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100528194238) do
+ActiveRecord::Schema.define(:version => 20100528192414) do
 
   create_table "andamentos", :force => true do |t|
     t.string   "nome_andamento"
@@ -30,13 +30,17 @@ ActiveRecord::Schema.define(:version => 20100528194238) do
     t.integer  "categoria_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "ativo"
   end
 
   create_table "tarefas", :force => true do |t|
+    t.string   "titulo"
+    t.text     "descricao"
+    t.datetime "data"
+    t.string   "login_user_resp", :limit => 40
+    t.string   "nome_user_resp",  :limit => 100, :default => ""
+    t.integer  "estoria_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "descricao"
   end
 
   create_table "users", :force => true do |t|
