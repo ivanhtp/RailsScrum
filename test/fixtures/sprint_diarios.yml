@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  sprint_id: 
+  dia: 
+  tarefa_id: 
+  tarefa_pontos: 1
+
+two:
+  sprint_id: 
+  dia: 
+  tarefa_id: 
+  tarefa_pontos: 1

@@ -1,0 +1,28 @@
+<h1>Editing sprint_diario</h1>
+
+<% form_for(@sprint_diario) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :sprint_id %><br />
+    <%= f.text_field :sprint_id %>
+  </p>
+  <p>
+    <%= f.label :dia %><br />
+    <%= f.text_field :dia %>
+  </p>
+  <p>
+    <%= f.label :tarefa_id %><br />
+    <%= f.text_field :tarefa_id %>
+  </p>
+  <p>
+    <%= f.label :tarefa_pontos %><br />
+    <%= f.text_field :tarefa_pontos %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @sprint_diario %> |
+<%= link_to 'Back', sprint_diarios_path %>

@@ -265,6 +265,8 @@ img {
 .home .contents, .archive .contents {
 	clear: both; }
 .contents li {
+	
+	
 	position: relative; }
 #extra-content {
 	margin-bottom: 0;
@@ -292,6 +294,7 @@ fieldset {
 legend {
 	margin: 0;
 	padding-bottom: .769em; }
+	*/
 label {
 	display: block; }
 label .note {
@@ -453,3 +456,41 @@ button:active, .button:active, .button a:active {
 #wpstats { /* Hide the stupid smiley face */
 	display: none; }
 	
+/*----------------Erros do Scafffold ------------------   */
+.fieldWithErrors {
+  padding: 2px;
+  background-color: #c00;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid #c00;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+  margin-left: 12px;
+
+}	

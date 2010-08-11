@@ -1,4 +1,6 @@
 <% form_for(@estoria) do |f| %>
+  <%= f.error_messages %>	
+	
 	<h4>Titulo</h4>
 	<%= f.text_field :titulo %>
 	
@@ -11,5 +13,5 @@
 	<h4>Data</h4>
 	<%= f.date_select(:data, :order => [:day, :month, :year]) %>
 	<br />
-	<%= f.submit "Enviar" %>
+	<%= f.submit "Confirmar" %>
 <% end %>

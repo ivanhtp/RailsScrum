@@ -1,0 +1,39 @@
+<h1>Visualizando Sprint <%=h@sprint.id %></h1>
+
+<p>
+  <b>Dtinicio:</b>
+  <%=h @sprint.dtinicio %>
+</p>
+
+<p>
+  <b>Dtfim:</b>
+  <%=h @sprint.dtfim %>
+</p>
+
+<p>
+  <b>Pontos:</b>
+  <%=h @sprint.pontos %>
+</p>
+
+<p>
+  <b>Objetivo:</b>
+  <%=h @sprint.objetivo %>
+</p>
+
+<% if Time.now.to_date >= @sprint.dtfim %>
+<fieldset id="retrospectiva">
+    <legend>Retrospectiva:</legend>
+	<p> 
+  		<b>O que foi bom?</b>
+  		<%=h @sprint.ret_bom %>
+	</p>
+
+	<p>
+  		<b>O que foi Ruim?</b>
+  		<%=h @sprint.ret_ruim %>
+	</p>
+</fieldset>
+<% end %>
+
+<%= link_to 'Edit', edit_sprint_path(@sprint) %> |
+<%= link_to 'Back', sprints_path %>

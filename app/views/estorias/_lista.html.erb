@@ -1,0 +1,6 @@
+  <tr>
+    <td><%=h estoria.titulo %></td>
+    <td><%= link_to 'Visualizar', estoria %></td>
+    <td><%= link_to 'Editar', edit_estoria_path(estoria) %></td>
+    <td><%= link_to 'Excluir', estoria, :confirm => 'Confirma exclusão?', :method => :delete %></td>
+  </tr>

@@ -1,12 +1,51 @@
-<h1>Editing tarefa</h1>
+<h1>Editar tarefa</h1>
 
 <% form_for(@tarefa) do |f| %>
   <%= f.error_messages %>
 
+ 
   <p>
-    <%= f.submit 'Update' %>
+    <%= f.label :titulo %> 	
+  	<%= f.text_field :titulo %>
+  </p>  	
+  <p>
+    <%= f.label :descricao %>
+    <%= f.text_area :descricao %>
+  </p>
+
+  <p>  
+    <%= f.label :pontos %>
+    <%= f.text_field :pontos %>
+  </p>  
+
+  <p>
+    <%= f.label :andamento_id %>
+    <%= f.text_area :andamento_id %>
+  </p>
+    
+  <p>
+    <%= f.label :data %>
+    <%= f.date_select(:data, :order => [:day, :month, :year]) %>
+  </p>
+
+  <p>
+    <%= f.label :login_user_resp %>
+    <%= f.text_field :login_user_resp %>
+  </p>
+  
+  <p>
+    <%= f.label :nome_user_resp %>
+    <%= f.text_field :nome_user_resp %>
+  </p>  
+  
+   <p>
+    <%= f.label :estoria_id %>
+    <%= f.text_field :estoria_id %>
+  </p>
+  <p>
+    <%= f.submit 'Confirmar' %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @tarefa %> |
-<%= link_to 'Back', tarefas_path %>
+<%= link_to 'Visualizar', @tarefa %> |
+<%= link_to 'Voltar', tarefas_path %>

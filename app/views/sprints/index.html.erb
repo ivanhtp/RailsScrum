@@ -1,0 +1,27 @@
+<h1>Sprints</h1>
+
+<table>
+  <tr>
+  	<th># </th>
+    <th>Início</th>
+    <th>Fim</th>
+    <th>Pontos</th>
+
+  </tr>
+
+<% @sprints.each do |sprint| %>
+  <tr>
+    <td><%=h sprint.id %></td>	
+    <td> de <%=h sprint.dtinicio %></td>
+    <td>até <%=h sprint.dtfim %></td>
+    <td><%=h sprint.pontos %></td>
+    <td><%= link_to 'Visualizar', sprint %></td>
+    <td><%= link_to 'Editar', edit_sprint_path(sprint) %></td>
+    <td><%= link_to 'Excluir', sprint, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Inserir novo Sprint', new_sprint_path %>

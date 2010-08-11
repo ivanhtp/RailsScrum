@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  dtinicio: 2010-08-11
+  dtfim: 2010-08-11
+  pontos: 9.99
+  objetivo: MyText
+  ret_bom: MyText
+  ret_ruim: MyText
+
+two:
+  dtinicio: 2010-08-11
+  dtfim: 2010-08-11
+  pontos: 9.99
+  objetivo: MyText
+  ret_bom: MyText
+  ret_ruim: MyText

@@ -1,0 +1,45 @@
+<h1>Editar Sprint</h1>
+
+<% form_for(@sprint) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :dtinicio %>
+    <%= f.date_select :dtinicio %>
+  </p>
+  <p>
+    <%= f.label :dtfim %>
+    <%= f.date_select :dtfim %>
+  </p>
+  <p>
+    <%= f.label :pontos %>
+    <%= f.text_field :pontos %>
+  </p>
+  <p>
+    <%= f.label :objetivo %></br>
+    <%= f.text_area :objetivo %>
+  </p>
+  
+</br>  
+<% if Time.now.to_date >= @sprint.dtfim %> 
+<fieldset id="retrospectiva">
+    <legend>Retrospectiva:</legend>	
+ 
+  <p>
+    <%= f.label "O que foi Bom?" %>
+    <%= f.text_area :ret_bom %>
+  </p>
+  <p>
+    <%= f.label "O que foi Ruim?" %>
+    <%= f.text_area :ret_ruim %>
+  </p>
+<% end %> 
+</fieldset>   
+  <p>
+    <%= f.submit 'Confirmar' %>
+  </p>
+
+<% end %>
+
+<%= link_to 'Visualizar', @sprint %> |
+<%= link_to 'Voltar', sprints_path %>

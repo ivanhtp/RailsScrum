@@ -1,3 +1,45 @@
+<p>
+  <b>Título:</b>
+  <%=h @tarefa.titulo %>
+</p>
+
+<p>
+  <b>Descrição:</b>
+  <%=h @tarefa.descricao %>
+</p>
+
+<p>
+  <b>Pontos:</b>
+  <%=h @tarefa.pontos %>
+</p>
+
+<p>
+  <b>Andamento Atual:</b>
+  <%=h @tarefa.andamento_id %>
+</p>
+
+<p>
+  <b>Data da Conclusão:</b>  <i>só deve aparecer se o campo acima for "Concluído!"</i>
+  <%= @tarefa.data.strftime("%d/%m/%y") %>
+</p>
+
+<p>
+  <b>Estória:</b> <i>deve vir preenchido da tela das estórias</i>
+  <%=h @tarefa.estoria_id %>
+</p>
+
+<p>
+  <b>Login Usuário responsável:</b>
+  <%=h @tarefa.login_user_resp %>
+</p>
+
+<p>
+  <b>Nome Usuário Responsável:</b> <i>deve preencher automaticamente ao colocar o login</i>
+  <%=h @tarefa.nome_user_resp %>
+</p>
+
+
 
 <%= link_to 'Edit', edit_tarefa_path(@tarefa) %> |
 <%= link_to 'Back', tarefas_path %>
+

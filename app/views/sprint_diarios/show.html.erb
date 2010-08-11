@@ -1,0 +1,23 @@
+<p>
+  <b>Sprint:</b>
+  <%=h @sprint_diario.sprint_id %>
+</p>
+
+<p>
+  <b>Dia:</b>
+  <%=h @sprint_diario.dia %>
+</p>
+
+<p>
+  <b>Tarefa:</b>
+  <%=h @sprint_diario.tarefa_id %>
+</p>
+
+<p>
+  <b>Tarefa pontos:</b>
+  <%=h @sprint_diario.tarefa_pontos %>
+</p>
+
+
+<%= link_to 'Edit', edit_sprint_diario_path(@sprint_diario) %> |
+<%= link_to 'Back', sprint_diarios_path %>

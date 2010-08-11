@@ -1,13 +1,18 @@
-<h1>Listagem de Estórias</h1>
+<h1>Estórias</h1>
+
+<table>
+  <tr>
+    <th>Título</th>
+  </tr>
 <% for estoria in @estorias %>
 
-	<h2>
-	<%= estoria.categoria.nome_categoria%>
-	<%= link_to estoria.titulo, estoria_path(estoria) %>
-	</h2>
+	<%= render :partial =>"lista", :locals =>{:estoria => estoria} %>
+
 
 <% end %>
 
+</table>
+
 <br />
-<p><%= link_to 'Cadastrar nova estória', new_estoria_path %></p>
+<p><%= link_to 'Inserir nova estória', new_estoria_path %></p>
 	

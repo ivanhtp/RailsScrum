@@ -1,0 +1,42 @@
+<h1>Cadastrar novo Sprint</h1>
+
+
+<% form_for(@sprint) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :dtinicio %>
+    <%= f.date_select :dtinicio %>
+  </p>
+  <p>
+    <%= f.label :dtfim %>
+    <%= f.date_select :dtfim %>
+  </p>
+  <p>
+    <%= f.label :pontos %>
+    <%= f.text_field :pontos, :size => 20, :maxlength => 3 %>
+  </p>
+  <p>
+    <%= f.label :objetivo %></br>
+    <%= f.text_area :objetivo %>
+  </p>
+
+<i>Após a conclusão do Sprint:</i>
+<fieldset id="retrospectiva"  >
+    <legend>Retrospectiva:</legend>  
+  <p>
+    <%= f.label "O que foi Bom?" %>
+    <%= f.text_area :ret_bom,  :disabled => true %>
+  </p>
+  <p>
+    <%= f.label "O que foi Ruim?" %>
+    <%= f.text_area :ret_ruim, :disabled  => true %>
+  </p>
+</fieldset>  
+
+  <p>
+    <%= f.submit 'Confirmar' %>
+  </p>
+<% end %>
+
+<%= link_to 'Voltar', sprints_path %>

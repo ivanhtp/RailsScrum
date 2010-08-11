@@ -1,0 +1,26 @@
+<h1>Listing sprint_diarios</h1>
+
+<table>
+  <tr>
+    <th>Sprint</th>
+    <th>Dia</th>
+    <th>Tarefa</th>
+    <th>Tarefa pontos</th>
+  </tr>
+
+<% @sprint_diarios.each do |sprint_diario| %>
+  <tr>
+    <td><%=h sprint_diario.sprint_id %></td>
+    <td><%=h sprint_diario.dia %></td>
+    <td><%=h sprint_diario.tarefa_id %></td>
+    <td><%=h sprint_diario.tarefa_pontos %></td>
+    <td><%= link_to 'Show', sprint_diario %></td>
+    <td><%= link_to 'Edit', edit_sprint_diario_path(sprint_diario) %></td>
+    <td><%= link_to 'Destroy', sprint_diario, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New sprint_diario', new_sprint_diario_path %>
