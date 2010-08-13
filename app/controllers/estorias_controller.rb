@@ -14,12 +14,14 @@ class EstoriasController < ApplicationController
   def create
     @estoria = Estoria.new(params[:estoria])
     if @estoria.save
-      flash[:aviso] = 'Estória cadastrada com sucesso.'
-      redirect_to(@estoria)
+      flash[:notice] = 'Estória cadastrada com sucesso.'
+	  redirect_to :controller=>'tarefas', :action => 'new', :estoria_id => @estoria.id
     else
-      flash[:aviso] = 'O formulário contém erros. Verifique os campos e envie novamente.'
+      flash[:notice] = 'O formulário contém erros. Verifique os campos e envie novamente.'
       render :action => "new"
     end
+
+
   end
   
   def edit
@@ -29,7 +31,7 @@ class EstoriasController < ApplicationController
   def update
     @estoria = Estoria.find(params[:id])
     if @estoria.update_attributes(params[:estoria])
-      flash[:aviso] = 'Estória atualizada.'
+      flash[:notice] = 'Estória atualizada.'
       redirect_to(@estoria)
     end
   end
@@ -37,7 +39,7 @@ class EstoriasController < ApplicationController
   def destroy
     @estoria = Estoria.find(params[:id])
     @estoria.destroy
-    flash[:aviso] = "Estoria excluida"
+    flash[:notice] = "Estoria excluida"
     redirect_to(estorias_path)
   end
 end

@@ -1,3 +1,3 @@
 class Andamento < ActiveRecord::Base
-	has many :tarefas
+  has_many :tarefas
 end

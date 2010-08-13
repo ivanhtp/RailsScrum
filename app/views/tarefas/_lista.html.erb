@@ -1,6 +1,6 @@
   <tr>
     <td><%=h tarefa.titulo %></td>
-    <td><%= link_to 'Visualizar', tarefa %></td>
-    <td><%= link_to 'Editar', edit_tarefa_path(tarefa) %></td>
-    <td><%= link_to 'Excluir', tarefa, :confirm => 'Confirma exclusão?', :method => :delete %></td>
+    <td><img src="/images/icons/show.png" ><%= link_to 'Visualizar', tarefa %></td>
+    <td><img src="/images/icons/edit.png" ><%= link_to 'Editar', edit_tarefa_path(tarefa) %></td>
+    <td><img src="/images/icons/delete.png" ><%= link_to 'Excluir', tarefa, :confirm => 'Confirma exclusão?', :method => :delete %></td>
   </tr>

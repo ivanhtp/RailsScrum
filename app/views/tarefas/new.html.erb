@@ -1,4 +1,10 @@
-<h1>Nova Tarefa</h1>
+<ul id="menu-horizontal">
+ <li><a href="#">Descrição</a></li>
+ <li><a href="#">Tarefas</a></li>
+</ul>
+<h1>NovaTarefa</h1>
+
+<br />
 
 <% form_for(@tarefa) do |f| %>
   <%= f.error_messages %>
@@ -18,10 +24,11 @@
   </p>  
 
   <p>
-    <%= f.label :andamento_id %>
-    <%= f.text_field :andamento_id %>
+    <%= f.label "Status Atual" %>
+	<%= f.select :andamento_id, Andamento.find(:all).collect{ |item| [item.nome_andamento, item.id]} %>
   </p>
-    
+  
+
   <p>
     <%= f.label :data %>
     <%= f.date_select(:data, :order => [:day, :month, :year]) %>

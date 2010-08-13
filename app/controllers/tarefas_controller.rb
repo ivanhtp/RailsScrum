@@ -25,7 +25,8 @@ class TarefasController < ApplicationController
   # GET /tarefas/new.xml
   def new
     @tarefa = Tarefa.new
-
+    @tarefa.estoria_id = params[:estoria_id] 
+    
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @tarefa }

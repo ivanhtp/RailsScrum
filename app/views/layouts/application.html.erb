@@ -8,7 +8,6 @@
 	<META name="language" content="pt-BR">
 	
 	<LINK rel="shortcut icon" href="http://scrollmagazine.com/wp-content/themes/scroll-magazine-new/images/favicon.png">
-	<LINK rel="stylesheet" href="./css/style.css" type="text/css">
 	<%= stylesheet_link_tag 'style' %>
 	<%=javascript_include_tag 'jquery-1.4.2.min.js' %>
 	<%=javascript_include_tag 'jquery-ui-1.8.custom.min.js' %>	
@@ -29,7 +28,8 @@
 		});
 	});
 	</SCRIPT>
-	<SCRIPT> $('#dialog').dialog(); </SCRIPT>
+
+	
 	
 
 	<TITLE>RuM - Scrum Project Manager</TITLE>
@@ -38,22 +38,20 @@
 <BODY class="home number-2">
 
 	<DIV id="header">
-		<A id="logo" title="Scroll over to the home page" href="./Scroll Magazine_files/Scroll Magazine.htm">
-		<IMG src="./Scroll Magazine_files/scroll-logo-trans.png" alt="Rails+Scrum Logos" width="1005" height="96"></A>
+
 	</DIV>
 	
-
-
 	<DIV id="navigation">
-		<h3  class="active"><A title="Configurações referentes ao Scrum" href="">Scrum</A></h3>
+		
+	<h3  class="active"><A title="Configurações referentes ao Scrum" href="">Scrum</A></h3>
 			<div id="menu_items">
-				<p><%= link_to 'Product Backlog', new_estoria_path %></p>
-				<p>Sprints</p>
-				<p>Indicadores</p>
+				<p><%= link_to 'Product Backlog', estorias_path %></p>
+				<p><%= link_to 'Sprints', sprints_path %></p>
+				<p><a >Indicadores</a></p>
 			</div>
 		<h3 <A title="Reuniões e artefatos do Sprint" href="">Sprint</A></h3>
 			<div id="menu_items">
-				<p>Sprint Backlog</p>
+				<p><%= link_to 'Sprint Backlog', sprints_path %></p>
 				<p>Board</p>
 				<p>Burndown</p>
 			</div>
@@ -76,9 +74,6 @@
 
 	<DIV id="content">	
 		
-		<% unless flash[:aviso].blank? %>
-			<div id="aviso"> <%= flash[:aviso] %> </div>
-		<% end %>
 		
 		<%= yield %>
 		
@@ -108,7 +103,6 @@
 		
 	</DIV>	
 
-	<P id="copyright">Copyright 2010 - Ivan Henrique Tavares Pauletti</P>
 </DIV>
 
 

@@ -21,15 +21,12 @@ body {
 	line-height: 1.333em;
 	color: #5c5c5c;
 	background-color: #E2E4DE;
-	margin-top: 10px; 
-}
+	/*	background: #fff url(../images/body-bg.jpg) repeat center left;*/
+	border-top: 10px solid #e2e4de; }
 
-/*
+
 #header {
-	float: none;
-	margin: 0 0 1.332em 0;
-	width: 270px;
- }*/
+	margin: 0 0 1.332em 0; }
 /*
 #logo {
 	background-image: /images/logo.png;
@@ -87,15 +84,12 @@ body {
 	margin-top: .541em; }
 
 #navigation {
-	float:left;	
-	padding-top:200px;	
-	background:url("/images/logo.png") no-repeat scroll left top transparent;
-	list-style:none outside none;
-	margin-bottom:0;
-	margin-left:15px;
-	position:relative;
-	text-align:left;
-	width:260px;
+	float: left;
+	width: 250px;
+	text-align: left;
+	list-style: none;
+	margin-bottom: 0; 
+	margin-left: 15px; 
 }
 #navigation li {
 	height: 3.333em; }
@@ -270,7 +264,6 @@ img {
 	float: left;
 	/*margin: 0 0 1.333em 1.333em;
 	border: 2px solid #e2e4de;*/ }
-}
 
 #content .blog-list .photo {
 	left: 0;
@@ -369,11 +362,6 @@ button:active, .button:active, .button a:active {
 	background: #e2e4de; }
 
 #footer {
-	
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    /*width: 100%;*/
 	background: #980000;
 	color: #969696;
 	font-size: .8em;
@@ -382,18 +370,17 @@ button:active, .button:active, .button a:active {
 	margin-top: 5em;
 	clear: both;
 	display: inline-block; /* Hack to make it always have the margin-top */ }
-	
 #footer h3 {
 	float : bottom;
 	color: #777776;
-	font-size: 2.66em;
+	font-size: 4em;
 	line-height: .75em;
 	text-transform: lowercase;
 	margin: .025em 0 .4em 0; }
 #footer ul, #footer ol {
 	list-style: none; }
 #footer .footer-section-1 {
-	width: 270px;
+	width: 240px;
 	float: left;
 	margin-left: 60px;
 	text-align: right; }
@@ -408,16 +395,14 @@ button:active, .button:active, .button a:active {
 #footer .footer-section-1 a:active, #footer #copyright a:active {
 	background: #cd0007;
 	color: #eee; }
-	
 #footer .footer-section-2 {
 	position: relative;
 	width: 240px;
 	margin-left: 80px;
 	float: left;
-	padding: 0 0px 0 160px; }
-	
+	padding: 0 120px 0 160px; }
 #footer .footer-section-2 h3 {
-	margin-left: -15px; }
+	margin-left: -160px; }
 #footer .footer-section-2 .cover {
 	position: absolute;
 	top: 5.222em;
@@ -448,7 +433,7 @@ button:active, .button:active, .button a:active {
 	font-size: 1.5em;
 	line-height: 1.111em;
 	color: #999;
-	margin: 0.111em 0 0 0; }
+	margin: 1.111em 0 0 0; }
 #footer .footer-section-2 .more-link {
 	margin-top: 1.667em; }
 #footer .footer-section-2 .more-link:hover, #footer .footer-section-2 .more-link:focus {
@@ -467,7 +452,7 @@ button:active, .button:active, .button a:active {
 #footer .footer-section-2 ol a, #footer .footer-section-2 ol a:visited, #footer .footer-section-2 ol a:hover, #footer .footer-section-2 ol a:focus, #footer .footer-section-2 ol a:active {
 	border: none; }
 
-/*
+
 #footer #copyright {
 	clear: both;
 	width: 840px;
@@ -475,11 +460,12 @@ button:active, .button:active, .button a:active {
 	text-align: center;
 	font-weight: bold;
 	font-size: .833em;
-	line-height: .2em;
+	line-height: 2em;
 	padding: 4em 0 2em 0;
 	letter-spacing: .1em; }		
-*/
 
+#wpstats { /* Hide the stupid smiley face */
+	display: none; }
 	
 /*----------------Erros do Scafffold ------------------   */
 .fieldWithErrors {
@@ -519,27 +505,3 @@ button:active, .button:active, .button a:active {
   margin-left: 12px;
 
 }	
-#menu-horizontal{
-font: 90% "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-list-style: none;
-margin: 10px;
-float: right;
-}
-
-#menu-horizontal li{
-float: left;
-width: 110px;
-text-align: center;
-}
-#menu-horizontal li a{
-background-color: #fff;
-border-right: 1px solid #ccc;
-color: #666;
-display: block;
-padding: 5px;
-text-decoration: none;
-}
-#menu-horizontal li a:hover {
-background-color: #fafafa;
-color: #333;
-}

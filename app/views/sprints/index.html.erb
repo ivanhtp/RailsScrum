@@ -15,9 +15,9 @@
     <td> de <%=h sprint.dtinicio %></td>
     <td>até <%=h sprint.dtfim %></td>
     <td><%=h sprint.pontos %></td>
-    <td><%= link_to 'Visualizar', sprint %></td>
-    <td><%= link_to 'Editar', edit_sprint_path(sprint) %></td>
-    <td><%= link_to 'Excluir', sprint, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><img src="/images/icons/show.png" ><%= link_to 'Visualizar', sprint %></td>
+    <td><img src="/images/icons/edit.png" ><%= link_to 'Editar', edit_sprint_path(sprint) %></td>
+    <td><img src="/images/icons/delete.png" ><%= link_to 'Excluir', sprint, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
