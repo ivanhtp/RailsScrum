@@ -1,21 +1,29 @@
 <ul id="menu-horizontal">
- <li><a href="#">Descrição</a></li>
- <li> <%= link_to "Tarefas", :controller => "tarefas", :action => "index", :estoria_id => @estoria.id %></li>
+ <li<a href="#"> --> Descrição</a></li>
+ <li> <%= link_to "Tarefas", :controller => "tarefas", :action => "index", :estoria_id => @estoria.id %></li> 
 </ul>
-
+<h1>Estória <%= @estoria.id %></h1>
 <h2><%= @estoria.titulo %></h2>
-
-
 
 <br />
 <h3>Descrição</h3>
 <p><%= @estoria.descricao %></p>
-<br /><br />
-<h4>Data para entrega da estória: <%= @estoria.data.strftime("%d/%m/%y") %></h4>
+<br/>
+<h4>Data para entrega da estória: 
+	<% if !@estoria.data.nil?  %> 	
+  		<td id="info_sprint_cell"><%= @estoria.data.strftime("%d/%m/%y") %></td>
+	<% else %>
+		<td> não concluído </td>
+	<% end %></h4>
 
-<p><%= link_to 'Inserir tarefa dessa estória', :controller=>'tarefas', :action => 'new', :estoria_id => @estoria.id %></p>
 </br>
 
-<p><%= link_to 'Editar', edit_estoria_path %></p>
-<p><%= link_to 'Excluir', estoria_path, :confirm => 'Confirma exclusão?', :method => :delete  %></p>
-<p><%= link_to 'Voltar', estorias_path %></p>
+<div class="buttons"
+<p>  <%=  link_to " <img src='/images/icons/task.png' alt=""/> Inserir tarefa dessa estória",  {:controller=>'tarefas', :action => 'new', :estoria_id => @estoria.id}, :class => "regular" %></p>
+  </div>
+  <br/>
+<div class="buttons">
+<p><%= link_to " <img src='/images/icons/back.png' alt=""/> Voltar", estorias_path, :class => "regular"  %></p>
+<p><%= link_to "<img src='/images/icons/edit.png' alt=""/> Editar", edit_estoria_path, :class => "regular" %></p>
+<p><%= link_to " <img src='/images/icons/delete.png' alt=""/> Excluir",estorias_path, :confirm => 'Confirma exclusão?', :method => :delete,   :class => "negative" %></p>
+</div>

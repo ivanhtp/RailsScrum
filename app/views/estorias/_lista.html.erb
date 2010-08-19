@@ -1,6 +1,20 @@
   <tr>
+  	<td><%=h estoria.id %></td>
     <td><%=h estoria.titulo %></td>
-    <td><img src="/images/icons/show.png" ><%= link_to 'Visualizar', estoria %></td>
-    <td><img src="/images/icons/edit.png" ><%= link_to 'Editar', edit_estoria_path(estoria) %></td>
-    <td><img src="/images/icons/delete.png" ><%= link_to 'Excluir', estoria, :confirm => 'Confirma exclusão?', :method => :delete %></td>
+    <td><%=h  Categoria.find(estoria.categoria_id).nome_categoria %></td>
+    
+    <% if !estoria.sprint_id.nil?  %> 	
+		<td id="info_sprint_cell"><%=h estoria.sprint_id %> </td>
+	<% else %>
+		<td> - </td>
+	<% end %> 
+   <% if !estoria.data.nil?  %> 	
+  		<td id="info_sprint_cell"><%= estoria.data.strftime("%d/%m/%y") %></td>
+	<% else %>
+		<td> não concluído </td>
+	<% end %> 
+	
+    <td><%= link_to '<img src="/images/icons/show.png" >', estoria %></td>
+    <td><%= link_to '<img src="/images/icons/edit.png" >', edit_estoria_path(estoria) %></td>
+    <td><%= link_to '<img src="/images/icons/delete.png" >', estoria, :confirm => 'Confirma exclusão?', :method => :delete %></td>
   </tr>

@@ -1,21 +1,48 @@
 <% form_for(@estoria) do |f| %>
   <%= f.error_messages %>	
-	
+  
+<% if !@estoria.sprint_id.nil?  %> 	
+	<i><p id="info_sprint">Esta estória faz parte do Sprint <%= @estoria.sprint_id %> </p></i>
+<% end %> 
+  
 	<h4>Titulo</h4>
-	<%= f.text_field :titulo %>
+	<%= f.text_field :titulo %><br/><br/>
 	
 	<h4>Descricao</h4>
-	<%= f.text_area :descricao %>
+	<%= f.text_area :descricao %><br/><br/>
 	
 	<h4>Categoria</h4>
-	<%= f.select :categoria_id, Categoria.find(:all).collect{ |item| [item.nome_categoria, item.id]} %>
+	<%= f.select :categoria_id, Categoria.find(:all).collect{ |item| [item.nome_categoria, item.id]} %><br/><br/>
 	
 	<h4>Data</h4>
 	<%= f.date_select(:data, :order => [:day, :month, :year]) %>
-	<br />
-	<p>
-	<%= f.submit "Confirmar" %>
-	</p>
-	</br>
+	<br/><br/>
+
+	
+	
+	
+	
+	<div class="buttons">
+
+<% if current_page?(:controller => 'estorias', :action => 'edit') %>
+<p>  <%=  link_to " <img src='/images/icons/task.png' alt=""/> Inserir tarefa dessa estória",  {:controller=>'tarefas', :action => 'new', :estoria_id => @estoria.id}, :class => "regular" %></p> 
+</div></br><br/><br/>
+<div class="buttons">
+<p><%= link_to " <img src='/images/icons/delete.png' alt=""/> Excluir", @estoria, :confirm => 'Confirma exclusão?', :method => :delete,   :class => "negative" %></p>
 
 <% end %>
+
+<p><%= link_to " <img src='/images/icons/back.png' alt=""/> Voltar", estorias_path, :class => "regular"  %></p>
+<p>	<%= f.submit "Confirmar" %>	</p>
+
+
+</div>
+
+	
+	
+<% end %>
+
+
+
+
+             

@@ -1,13 +1,9 @@
 <ul id="menu-horizontal">
- <li><a href="#">Descrição</a></li>
- <li><a href="#">Tarefas</a></li>
+ <li<a href="#" -->Descrição</a></li>
+ <li><%= link_to "Tarefas", :controller => "tarefas", :action => "index", :estoria_id => @estoria.id %></li>
 </ul>
-
 <h1>Editar Estória</h1>
 
 <%=render :partial => 'formulario' %>
 
 
-<%= link_to 'Inserir tarefas desta estória', @tarefa %> |
-<%= link_to 'Visualizar', @estoria %> |
-<%= link_to 'Voltar', estoria_path %>

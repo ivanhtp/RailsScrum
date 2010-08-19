@@ -48,7 +48,15 @@
 </p>
 
 
+<div class="buttons">
+<p><%= link_to " <img src='/images/icons/back.png' alt=""/> Voltar", { :controller => 'tarefas', :action => 'index', :estoria_id => @tarefa.estoria_id},  :class => "regular"  %></p>
+<p><%= link_to "<img src='/images/icons/edit.png' alt=""/> Editar", { :controller => 'tarefas', :action => 'edit', :id => @tarefa.id, :estoria_id => @tarefa.estoria_id}, :class => "regular" %></p>
+<p><%= link_to " <img src='/images/icons/delete.png' alt=""/> Excluir",tarefa_path, :confirm => 'Confirma exclusão?', :method => :delete,   :class => "negative" %></p>
+</div>
 
-<%= link_to 'Edit', edit_tarefa_path(@tarefa) %> |
-<%= link_to 'Back', tarefas_path %>
+
+
+
+
+
 

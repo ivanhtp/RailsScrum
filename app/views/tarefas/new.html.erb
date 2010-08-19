@@ -1,8 +1,8 @@
 <ul id="menu-horizontal">
- <li><a href="#">Descrição</a></li>
- <li><a href="#">Tarefas</a></li>
+ <li> <%= link_to "Descrição", :controller => "estorias", :action => "show", :id => params[:estoria_id] %></li>  
+ <li><a href="#">--> Tarefas</a></li>
 </ul>
-<h1>NovaTarefa</h1>
+<h1>Nova Tarefa</h1>
 
 <br />
 
@@ -51,10 +51,11 @@
   </p>
 
   <p>
-    <%= f.submit 'Confirmar' %>
+    <%= f.submit 'Confirmar',:estoria_id => params[:estoria_id]  %>
   </p>
 <% end %>
 
-<%= link_to 'Voltar', tarefas_path %>
+
+<%= link_to "Voltar", :controller => "tarefas", :action => "index", :estoria_id => params[:estoria_id] %> 
 
 

@@ -1,6 +1,6 @@
 class EstoriasController < ApplicationController
   def index
-    @estorias = Estoria.find(:all)
+	@estorias = Estoria.all
   end
   
   def show

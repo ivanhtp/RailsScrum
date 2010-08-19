@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100812110525) do
+ActiveRecord::Schema.define(:version => 20100813172137) do
 
   create_table "andamentos", :force => true do |t|
     t.string   "nome_andamento"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20100812110525) do
     t.integer  "categoria_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "sprint_id"
   end
 
   add_index "estorias", ["categoria_id"], :name => "categoria_id"

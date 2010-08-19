@@ -1,6 +1,6 @@
 <ul id="menu-horizontal">
- <li><a href="#">Descrição</a></li>
- <li><a href="#">Tarefas</a></li>
+ <li> <%= link_to "Descrição", :controller => "estorias", :action => "show", :id => params[:estoria_id] %></li>  
+ <li><a href="#">--> Tarefas</a></li>
 </ul>
 <h1>Editar Tarefa</h1>
 
@@ -53,5 +53,18 @@
   </p>
 <% end %>
 
-<%= link_to 'Visualizar', @tarefa %> |
-<%= link_to 'Voltar', tarefas_path %>
+
+<div class="buttons">
+
+<% if current_page?(:controller => 'tarefas', :action => 'edit') %>
+<p><%= link_to " <img src='/images/icons/delete.png' alt=""/> Excluir", @tarefa, :confirm => 'Confirma exclusão?', :method => :delete,   :class => "negative" %></p>
+<% end %>
+
+<p><%= link_to " <img src='/images/icons/back.png' alt=""/> Voltar", { :controller => 'tarefas', :action => 'index', :estoria_id => @tarefa.estoria_id},  :class => "regular"  %></p>
+
+
+</div>
+
+
+
+

@@ -1,8 +1,13 @@
 class TarefasController < ApplicationController
   # GET /tarefas
   # GET /tarefas.xml
+  
+
+  
   def index
-    @tarefas = Tarefa.all
+	#@tarefas = Tarefa.all
+	@tarefas = Tarefa.all(:conditions => { :estoria_id => params[:estoria_id]  })
+
 
     respond_to do |format|
       format.html # index.html.erb
@@ -38,15 +43,20 @@ class TarefasController < ApplicationController
     @tarefa = Tarefa.find(params[:id])
   end
 
+
+
   # POST /tarefas
   # POST /tarefas.xml
   def create
     @tarefa = Tarefa.new(params[:tarefa])
-
+ 
+    
     respond_to do |format|
       if @tarefa.save
         flash[:notice] = 'Tarefa was successfully created.'
-        format.html { redirect_to(@tarefa) }
+        format.html { redirect_to :controller=>'tarefas', :action => 'show', :id => @tarefa.id, :estoria_id => @tarefa.estoria_id}
+        	  
+        #(:conditions => { :estoria_id => params[:estoria_id]  })
         format.xml  { render :xml => @tarefa, :status => :created, :location => @tarefa }
       else
         format.html { render :action => "new" }
@@ -79,7 +89,7 @@ class TarefasController < ApplicationController
     @tarefa.destroy
 
     respond_to do |format|
-      format.html { redirect_to(tarefas_url) }
+      format.html { redirect_to :controller => 'tarefas', :action => 'index', :estoria_id => @tarefa.estoria_id }
       format.xml  { head :ok }
     end
   end

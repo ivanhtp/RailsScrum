@@ -1,10 +1,11 @@
 <ul id="menu-horizontal">
- <li><a href="#">Descrição</a></li>
- <li><a href="#">Tarefas</a></li>
+ <li> <%= link_to "Descrição", :controller => "estorias", :action => "show", :id => params[:estoria_id] %></li>  
+ <li><a href="#">--> Tarefas</a></li>
 </ul>
 
-<h1>Tarefas</h1>
 
+<h1>Estória <%= params[:estoria_id] %></h1>
+<h2>Tarefas</h2>
 <br />
 
 <table>
@@ -21,4 +22,6 @@
 
 <br />
 
-<%= link_to 'Inserir nova Tarefa', new_tarefa_path %>
+<div class="buttons"
+	<p>  <%=  link_to " <img src='/images/icons/task.png' alt=""/> Inserir tarefa dessa estória",  {:controller=>'tarefas', :action => 'new', :estoria_id => params[:estoria_id]}, :class => "regular" %></p>
+</div>
