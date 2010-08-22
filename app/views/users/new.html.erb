@@ -1,0 +1,21 @@
+<h1>Sign up as a new user</h1>
+<% @user.password = @user.password_confirmation = nil %>
+
+<%= error_messages_for :user %>
+<% form_for :user, :url => users_path do |f| -%>
+<p><%= f.label :login %></p>
+<p><%= f.text_field :login %></p>
+
+<p><%= f.label :email %></p>
+<p><%= f.text_field :email %></p>
+
+<p><%= f.label :password %></p>
+<p><%= f.password_field :password %></p>
+
+<p><%= f.label :password_confirmation, 'Confirm Password' %></p>
+<p><%= f.password_field :password_confirmation %></p>
+
+<%=render :partial => 'user_bar' %>
+
+<p><%= submit_tag 'Sign up' %></p>
+<% end -%>

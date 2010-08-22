@@ -5,6 +5,15 @@ class EstoriasController < ApplicationController
   
   def show
     @estoria = Estoria.find(params[:id])
+    
+    @graph_tarefas = []
+
+
+
+
+
+
+
   end
   
   def new
@@ -38,8 +47,19 @@ class EstoriasController < ApplicationController
   
   def destroy
     @estoria = Estoria.find(params[:id])
+    if @estoria.sprint_id.nil?
+        #Deleta todas as tarefas da estoria
+		Tarefa.delete_all(["estoria_id = ?", @estoria.id])
     @estoria.destroy
     flash[:notice] = "Estoria excluida"
     redirect_to(estorias_path)
+	else
+	  flash[:notice] = 'Esta estória já foi associada a um Sprint. Não pode ser excluída'
+      render :action => "show"		
+	end		
   end
+
+
+
+
 end

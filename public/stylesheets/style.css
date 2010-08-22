@@ -15,7 +15,7 @@ body:before {
 	height:100%;
 	float:left;
 	width:0;
-	margin-top:-32767px;/
+	margin-top:-32767px;
 }
 	
 body, input, textarea, #footer h4 {
@@ -207,12 +207,13 @@ ol {
 code {
 	white-space: pre;
 	background-color: #e6f4f6;
-	background-color: rgba(135, 202, 218, .2); }
+	/*background-color: rgba(135, 202, 218, .2); */
+ }
 table {
 	border-spacing: .166em; }
 td, th {
 	background-color: #f1f1f1;
-	background-color: rgba(183, 183, 183, .2);
+	/*background-color: rgba(183, 183, 183, .2);*/
 	padding: 0 .666em; }
 th {
 	color: #8c8c8c; }
@@ -232,7 +233,8 @@ blockquote p {
 	padding-left: 10px;
 	margin-bottom: 0;
 	border-left: 5px solid #c2e4ec;
-	border-left-color: rgba(135, 202, 218, .5); }
+	/*border-left-color: rgba(135, 202, 218, .5);*/
+}
 blockquote p + p {
 	text-indent: 3.999em; }
 blockquote cite {
@@ -298,7 +300,6 @@ textarea {
 	display: inline-block; /* Hack to make it always have the margin-top */ }
 	
 #footer h3 {
-	float : bottom;
 	color: #777776;
 	font-size: 2.66em;
 	line-height: .75em;
@@ -317,7 +318,7 @@ textarea {
 	font-weight: bold; }
 #footer .footer-section-1 a:visited {
 	color: #aaa; }
-#footer .footer-section-1 a:hover, #footer .footer-section-1 a:focus,  {
+#footer .footer-section-1 a:hover, #footer .footer-section-1 a:focus  {
 	color: #eee; }
 #footer .footer-section-1 a:active {
 	background: #cd0007;

@@ -249,7 +249,7 @@ module CssGraphs
   #  horizontal_bar_graph [["Stout", 10], ["IPA", 80], ["Pale Ale", 50], ["Milkshake", 30]]
   # 
   # NOTE: Updated to take an array instead of forcing you to use *array.
-  # NOTE: Does not normalize data yet...TODO
+
 
   def horizontal_bar_graph(data)
     html = <<-"HTML"
@@ -290,7 +290,6 @@ module CssGraphs
   #  complex_bar_graph [["Stout", 10], ["IPA", 80], ["Pale Ale", 50], ["Milkshake", 30]]
   #  
   # NOTE: Updated to take an array instead of forcing you to use *array.
-  # NOTE: Does not normalize data yet...TODO
 
   def complex_bar_graph(data)
     html = <<-"HTML"

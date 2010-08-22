@@ -16,11 +16,11 @@
     <%= f.text_field :pontos %>
   </p>
   <p>
-    <%= f.label :objetivo %></br>
+    <%= f.label :objetivo %><br/>
     <%= f.text_area :objetivo %>
   </p>
   
-</br>  
+<br/>
 <% if Time.now.to_date >= @sprint.dtfim %> 
 <fieldset id="retrospectiva">
     <legend>Retrospectiva:</legend>	

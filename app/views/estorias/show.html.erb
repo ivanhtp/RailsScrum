@@ -15,8 +15,23 @@
 	<% else %>
 		<td> não concluído </td>
 	<% end %></h4>
+	
+<h3>Quantidade de Tarefas desta estória:</h3>
 
-</br>
+	
+	
+<h3>Pontos totais Estória</h3>
+<p><%= @estoria.descricao %></p>	
+
+<%= bar_graph  [['Gouda', 24],
+                 ['Havarti', 9],
+                 ['Provolone', 81],
+                 ['Wensleydale', 57],
+                 ['Stilton', 42]] %>
+
+
+
+<br/>
 
 <div class="buttons"
 <p>  <%=  link_to " <img src='/images/icons/task.png' alt=""/> Inserir tarefa dessa estória",  {:controller=>'tarefas', :action => 'new', :estoria_id => @estoria.id}, :class => "regular" %></p>
@@ -25,5 +40,5 @@
 <div class="buttons">
 <p><%= link_to " <img src='/images/icons/back.png' alt=""/> Voltar", estorias_path, :class => "regular"  %></p>
 <p><%= link_to "<img src='/images/icons/edit.png' alt=""/> Editar", edit_estoria_path, :class => "regular" %></p>
-<p><%= link_to " <img src='/images/icons/delete.png' alt=""/> Excluir",estorias_path, :confirm => 'Confirma exclusão?', :method => :delete,   :class => "negative" %></p>
+<p><%= link_to " <img src='/images/icons/delete.png' alt=""/> Excluir", @estoria, :confirm => 'Deseja realmente deletar esta estória e todas as suas tarefas?', :method => :delete,   :class => "negative" %></p>
 </div>

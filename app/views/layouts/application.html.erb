@@ -1,92 +1,91 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR">
 
-<HEAD>
-	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<META http-equiv="Content-Language" content="pt-BR">
-	<META name="language" content="pt-BR">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="Content-Language" content="pt-BR"/>
+	<meta name="language" content="pt-BR"/>
 	
-	<LINK rel="shortcut icon" href="favicon.png">
+	<link rel="shortcut icon" href="favicon.png"/>
 	<%= stylesheet_link_tag 'style' %>
-	<%=javascript_include_tag 'jquery-1.4.2.min.js' %>
-	<%=javascript_include_tag 'jquery-ui-1.8.custom.min.js' %>	
+	<%=javascript_include_tag 'jquery-1.4.2.min.js', 'jquery-ui-1.8.custom.min.js' %>
 
-	<SCRIPT type="text/javascript">
+	<script type="text/javascript">
 		$(function() {
 		//getter
 		$("#navigation").accordion({collapsible: true});
 		$("#navigation").accordion( 'activate' , false );
 	});
-	</SCRIPT>
+	</script>
 	<!--[if  IE 8]>
 		<style type="text/css">
 			#wrap {display:table;}
 		</style>
 	<![endif]-->
 	
-	<TITLE>RuM - Scrum Project Manager</TITLE>
-</HEAD>
+	<title>RuM - Scrum Project Manager</title>
+</head>
 
-<BODY class="home number-2">
+<body>
 
 	<div id="wrap">
-		<DIV id="navigation">
+		<div id="navigation">
 	
-		   <h3  class="active"><A title="Configurações referentes ao Scrum" href="">Scrum</A></h3>
+		   <h3  class="active"><a title="Configurações referentes ao Scrum" href="">Scrum</a></h3>
 				<div id="menu_items">
 					<p><%= link_to 'Product Backlog', estorias_path %></p>
 					<p><%= link_to 'Sprints', sprints_path %></p>
 					<p><a >Indicadores</a></p>
 				</div>
-			<h3 class="active"><A title="Reuniões e artefatos do Sprint" href="">Sprint</A></h3>
+			<h3 class="active"><a title="Reuniões e artefatos do Sprint" href="">Sprint</a></h3>
 				<div id="menu_items">
 					<p><%= link_to 'Sprint Backlog', sprints_path %></p>
 					<p>Board</p>
 					<p>Burndown</p>
 				</div>
-			<h3 class="active"><A title="Customizações e preferências" href="">Preferências</A></h3>
+			<h3 class="active"><a title="Customizações e preferências" href="">Preferências</a></h3>
 				<div id="menu_items">
 					<p>Configurações</p>
 					<p>Projetos</p>
 					<p>Usuários</p>
 				</div>
-			<h3 class="active"><A title="Blog sobre o projeto" href="">Blog</A></h3>
+			<h3 class="active"><a title="Blog sobre o projeto" href="">Blog</a></h3>
 				<div id="menu_items">
 					<p>Product Backlog</p>
 				</div>
-			<h3 class="active"><A title="Informações a respeito da ferramenta RuM" href="">Sobre</A></h3>
+			<h3 class="active"><a title="Informações a respeito da ferramenta RuM" href="">Sobre</a></h3>
 				<div id="menu_items">
 				<p>About</p>
 				<p>Ajuda</p>
 				</div>
-		</DIV>
+		</div>
 	
 	
-		<DIV id="content">	
+		<div id="content">
 			
 			
 			<%= yield %>
 			
-		</DIV>
+		</div>
 	</div>
 
-	<DIV id="footer">
-		<DIV class="footer-section-1">
-		<H3>informe-se</H3>
-			<UL>
-				<LI>Acompanhe nosso <A href="testestestes">blog</A></LI>
-				<LI>Siga o projeto no <A href="http://twitter.com/railsscrum">twitter</A></LI>
-				<LI>Baixe este projeto no <A href="http://github.com/ivanhtp/RailsScrum">git</A></LI>
-			</UL>
-		</DIV>
+	<div id="footer">
+		<div class="footer-section-1">
+		<h3>informe-se</h3>
+			<ul>
+				<li>Acompanhe nosso <a href="testestestes">blog</a></li>
+				<li>Siga o projeto no <a href="http://twitter.com/railsscrum">twitter</a></li>
+				<li>Baixe este projeto no <a href="http://github.com/ivanhtp/RailsScrum">git</a></li>
+			</ul>
+		</div>
 
-		<DIV class="footer-section-2">
-			<H3>extras</H3>
+		<div class="footer-section-2">
+			<h3>extras</h3>
 			 
-			<P>Acharei alguma coisa interessante pra escrever aqui ainda</P>
-		</DIV>	
-	</DIV>
+			<p>Acharei alguma coisa interessante pra escrever aqui ainda</p>
+		</div>
+	</div>
 
-</BODY>
+</body>
 
-</HTML>
+</html>

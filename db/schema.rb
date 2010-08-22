@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100813172137) do
+ActiveRecord::Schema.define(:version => 20100820181004) do
 
   create_table "andamentos", :force => true do |t|
     t.string   "nome_andamento"
@@ -59,19 +59,27 @@ ActiveRecord::Schema.define(:version => 20100813172137) do
     t.string   "titulo"
     t.text     "descricao"
     t.datetime "data"
-    t.string   "login_user_resp", :limit => 40
-    t.string   "nome_user_resp",  :limit => 100, :default => ""
     t.integer  "estoria_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "pontos"
     t.integer  "andamento_id"
     t.integer  "sprint_id"
+    t.string   "user_login"
   end
 
   create_table "users", :force => true do |t|
+    t.string   "login",                     :limit => 40
+    t.string   "name",                      :limit => 100, :default => ""
+    t.string   "email",                     :limit => 100
+    t.string   "crypted_password",          :limit => 40
+    t.string   "salt",                      :limit => 40
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "remember_token",            :limit => 40
+    t.datetime "remember_token_expires_at"
   end
+
+  add_index "users", ["login"], :name => "index_users_on_login", :unique => true
 
 end

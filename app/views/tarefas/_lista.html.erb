@@ -1,5 +1,6 @@
   <tr>
     <td><%=h tarefa.titulo %></td>
+    <td><%=h tarefa.pontos %></td>
     <td><%= link_to '<img src="/images/icons/show.png" >',:controller=>'tarefas', :action => 'show',:id => tarefa.id,  :estoria_id =>  params[:estoria_id] %></td>
     <td><%= link_to '<img src="/images/icons/edit.png" >', :controller=>'tarefas', :action => 'edit',:id => tarefa.id, :estoria_id =>  params[:estoria_id] %></td>
     <td><%= link_to '<img src="/images/icons/delete.png" >', tarefa, :confirm => 'Confirma exclusão?', :method => :delete %></td>

@@ -26,9 +26,9 @@
 
 <% if current_page?(:controller => 'estorias', :action => 'edit') %>
 <p>  <%=  link_to " <img src='/images/icons/task.png' alt=""/> Inserir tarefa dessa estória",  {:controller=>'tarefas', :action => 'new', :estoria_id => @estoria.id}, :class => "regular" %></p> 
-</div></br><br/><br/>
+</div><br/><br/>
 <div class="buttons">
-<p><%= link_to " <img src='/images/icons/delete.png' alt=""/> Excluir", @estoria, :confirm => 'Confirma exclusão?', :method => :delete,   :class => "negative" %></p>
+<p><%= link_to " <img src='/images/icons/delete.png' alt=""/> Excluir", @estoria, :confirm => 'Deseja realmente deletar esta estória e todas as suas tarefas?', :method => :delete,   :class => "negative" %></p>
 
 <% end %>
 
