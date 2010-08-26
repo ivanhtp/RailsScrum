@@ -95,13 +95,15 @@ body {
 	overflow: hidden; }
 #navigation a:hover, #navigation a:focus, #navigation .active a:hover, #navigation .active a:focus {
 	color: #cd0027;
-	/*background: none;*/ }
+	
+ }
 #navigation a:active, #navigation .active a:active {
 	color: #fff;
-/*background: #cd0007;*/ }
+ }
 #navigation .active a {
 	color: #fff;
-	/*background: #cd0007;*/ }
+	text-shadow:0 1px 0 #9C9C9C;
+ }
 	
 #menu_items {
 	padding-bottom: 1em;
@@ -118,6 +120,55 @@ body {
 	padding:0;
 	vertical-align:baseline;
  }	
+ 
+ 
+ /* Middle
+-----------------------------------------------------------------------------*/
+#middle {
+	width: 100%;
+	padding: 0 0 116px;
+	height: 1%;
+}
+#middle:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+#container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+#content_login {
+	background:url("/images/LogoFull.png") no-repeat scroll left top #E2E4DE;
+	margin:30px 0 0 30px;
+	padding:450px 0 0 0;
+	height:210px;
+}
+
+#wrapper {
+	width: 100%;
+	min-width: 1000px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+/* Sidebar Right
+-----------------------------------------------------------------------------*/
+#sideRight {
+background:url("/images/gui/postit.png") no-repeat scroll left top #E2E4DE;
+border:medium none;
+float:left;
+height: 350px;
+margin: 80px -200px 2em -450px;
+padding:30px 10px 60px 80px;
+position:relative;
+width:400px;
+}
+ 
 	
 
 #content {
@@ -163,6 +214,7 @@ h1 a:active {
 h2, legend {
 	font-size: 1.733em;
 	line-height: 1.153em;
+	text-shadow:0 1px 0 #FFFFFF;
 	margin: 1.154em 0 .385em 0; }
 h2 a, h3 a, h4 a, h5 a {
 	color: #5c5c5c;
@@ -547,4 +599,12 @@ button.regular, .buttons a.regular{
     color:#fff;
 }
 
+
+/*---------------- Barra de andamento  ------------------   */
+img.percentImage {
+ background: white url(/images/gui/percentImage_back.png) top left no-repeat;
+ padding: 0;
+ margin: 5px 0 0 0;
+ background-position: 1px 0;
+}
 

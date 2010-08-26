@@ -2,43 +2,48 @@
  <li<a href="#"> --> Descrição</a></li>
  <li> <%= link_to "Tarefas", :controller => "tarefas", :action => "index", :estoria_id => @estoria.id %></li> 
 </ul>
+
 <h1>Estória <%= @estoria.id %></h1>
 <h2><%= @estoria.titulo %></h2>
 
+<% if !@estoria.sprint_id.nil?  %> 	
+	<i><p id="info_sprint">Esta estória faz parte do Sprint <%= @estoria.sprint_id %> </p></i>
+<% end %> 
+
 <br />
+
 <h3>Descrição</h3>
 <p><%= @estoria.descricao %></p>
-<br/>
 <h4>Data para entrega da estória: 
-	<% if !@estoria.data.nil?  %> 	
-  		<td id="info_sprint_cell"><%= @estoria.data.strftime("%d/%m/%y") %></td>
-	<% else %>
-		<td> não concluído </td>
-	<% end %></h4>
-	
-<h3>Quantidade de Tarefas desta estória:</h3>
-
-	
-	
-<h3>Pontos totais Estória</h3>
-<p><%= @estoria.descricao %></p>	
-
-<%= bar_graph  [['Gouda', 24],
-                 ['Havarti', 9],
-                 ['Provolone', 81],
-                 ['Wensleydale', 57],
-                 ['Stilton', 42]] %>
+<% if !@estoria.data.nil?  %> 	
+  	<td id="info_sprint_cell"><%= @estoria.data.strftime("%d/%m/%y") %></td>
+<% else %>
+	<td> não concluído </td>
+<% end %></h4>
+<br/>
 
 
+
+<h3>Pontos totais Estória:	<i><%=Tarefa.count(:conditions => "estoria_id = #{@estoria.id}") %></i></h3>
+<h3>Pontos totais Estória:  <i><%= Tarefa.sum(:pontos, :conditions =>["estoria_id = #{@estoria.id}"]) %></i></h3>
 
 <br/>
+	
+<h3>Andamento:</h3>
+<p><img src="/images/gui/percentImage.png" alt=" <%= percentagem_tarefas_concluidas(:estoria_id => @estoria.id, :tipo => 1) %>%" class="percentImage" style="background-position: -<%= percentagem_tarefas_concluidas(:estoria_id => @estoria.id, :tipo => 2) %>px 0pt;" />
+<i><%= percentagem_tarefas_concluidas(:estoria_id => @estoria.id, :tipo => 1) %>% das tarefas concluídas</i> </p>	
+
+<br/><br/>
 
 <div class="buttons"
-<p>  <%=  link_to " <img src='/images/icons/task.png' alt=""/> Inserir tarefa dessa estória",  {:controller=>'tarefas', :action => 'new', :estoria_id => @estoria.id}, :class => "regular" %></p>
-  </div>
-  <br/>
+	<p>  <%=  link_to " <img src='/images/icons/task.png' alt=""/> Inserir tarefa dessa estória",  {:controller=>'tarefas', :action => 'new', :estoria_id => @estoria.id}, :class => "regular" %></p>
+</div>
+
+
+ <br/>
+ 
 <div class="buttons">
-<p><%= link_to " <img src='/images/icons/back.png' alt=""/> Voltar", estorias_path, :class => "regular"  %></p>
-<p><%= link_to "<img src='/images/icons/edit.png' alt=""/> Editar", edit_estoria_path, :class => "regular" %></p>
-<p><%= link_to " <img src='/images/icons/delete.png' alt=""/> Excluir", @estoria, :confirm => 'Deseja realmente deletar esta estória e todas as suas tarefas?', :method => :delete,   :class => "negative" %></p>
+	<p><%= link_to " <img src='/images/icons/back.png' alt=""/> Voltar", estorias_path, :class => "regular"  %></p>
+	<p><%= link_to "<img src='/images/icons/edit.png' alt=""/> Editar", edit_estoria_path, :class => "regular" %></p>
+	<p><%= link_to " <img src='/images/icons/delete.png' alt=""/> Excluir", @estoria, :confirm => 'Deseja realmente deletar esta estória e todas as suas tarefas?', :method => :delete,   :class => "negative" %></p>
 </div>

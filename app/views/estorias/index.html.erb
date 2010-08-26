@@ -5,27 +5,19 @@
     <th>#</th>  	
     <th>Título</th>
     <th>Categoria</th>    
+    <th>Andamento</th>
     <th>Sprint</th>
     <th>Conclusão</th>    
   </tr>
+  
 <% for estoria in @estorias %>
-
 	<%= render :partial =>"lista", :locals =>{:estoria => estoria} %>
-
-
 <% end %>
 
 </table>
-
+<br />
 <br />
 
-
-<%= bar_graph  [['Gouda', 24], 
-                 ['Havarti', 9], 
-                 ['Provolone', 81], 
-                 ['Wensleydale', 57], 
-                 ['Stilton', 42]] %>
-<br />
 <div class="buttons">
   <%=  link_to " <img src='/images/icons/task.png' alt=""/> Nova estória",  new_estoria_path, :class => "regular" %>
 

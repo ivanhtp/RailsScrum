@@ -5,14 +5,6 @@ class EstoriasController < ApplicationController
   
   def show
     @estoria = Estoria.find(params[:id])
-    
-    @graph_tarefas = []
-
-
-
-
-
-
 
   end
   

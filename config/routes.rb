@@ -6,14 +6,9 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
 
   map.resource :session
-
   map.resources :sprint_diarios
-
   map.resources :sprints
-
-
-
-  map.root :controller => "estorias"
+  map.root :controller => 'sessions', :action => 'new'
   map.resources :categorias
   map.resources :estorias
   map.resources :tarefas

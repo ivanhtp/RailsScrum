@@ -1,6 +1,6 @@
 <ul id="menu-horizontal">
- <li> <%= link_to "Descrição", :controller => "estorias", :action => "show", :id => params[:estoria_id] %></li>  
- <li><a href="#">--> Tarefas</a></li>
+ <li> <%= link_to "Descrição", :controller => "estorias", :action => "show", :id => params[:estoria_id] %></li> 
+ <li> <%= link_to "Tarefas", :controller => "tarefas", :action => "index", :estoria_id => params[:estoria_id] %></li> 
 </ul>
 <h1>Editar Tarefa</h1>
 
