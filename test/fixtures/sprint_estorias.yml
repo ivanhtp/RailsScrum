@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  sprint_id: 1
+  estoria_id: 1
+  prioridade: 1
+
+two:
+  sprint_id: 1
+  estoria_id: 1
+  prioridade: 1

@@ -1,6 +1,8 @@
+<% if logged_in? %>
+
 <ul id="menu-horizontal">
- <li<a href="#"> --> Descrição</a></li>
- <li> <%= link_to "Tarefas", :controller => "tarefas", :action => "index", :estoria_id => @estoria.id %></li> 
+ <li><a href="#"> --> Descrição</a></li>
+ <li><%= link_to "Tarefas", :controller => "tarefas", :action => "index", :estoria_id => @estoria.id %></li> 
 </ul>
 
 <h1>Estória <%= @estoria.id %></h1>
@@ -24,8 +26,8 @@
 
 
 
-<h3>Pontos totais Estória:	<i><%=Tarefa.count(:conditions => "estoria_id = #{@estoria.id}") %></i></h3>
-<h3>Pontos totais Estória:  <i><%= Tarefa.sum(:pontos, :conditions =>["estoria_id = #{@estoria.id}"]) %></i></h3>
+<h3>Total de Tarefas: <i><%= Tarefa.count(:conditions => "estoria_id = #{@estoria.id}") %></i></h3>
+<h3>Pontos totais dessa Estória:  <i><%= Tarefa.sum(:pontos, :conditions =>["estoria_id = #{@estoria.id}"]) %></i></h3>
 
 <br/>
 	
@@ -47,3 +49,4 @@
 	<p><%= link_to "<img src='/images/icons/edit.png' alt=""/> Editar", edit_estoria_path, :class => "regular" %></p>
 	<p><%= link_to " <img src='/images/icons/delete.png' alt=""/> Excluir", @estoria, :confirm => 'Deseja realmente deletar esta estória e todas as suas tarefas?', :method => :delete,   :class => "negative" %></p>
 </div>
+<% end %>

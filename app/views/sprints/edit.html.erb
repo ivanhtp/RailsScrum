@@ -1,3 +1,11 @@
+<% if logged_in? %>
+	
+<ul id="menu-horizontal">
+ <li><a href="#"> --> Descrição</a></li>	
+ <li><%= link_to "Estórias", :controller => "sprints", :action => "selectEstorias", :sprint_id => @sprint.id %></li>
+ <li><a href="#"> Usuários</a></li>	
+</ul>
+
 <h1>Editar Sprint</h1>
 
 <% form_for(@sprint) do |f| %>
@@ -16,7 +24,7 @@
     <%= f.text_field :pontos %>
   </p>
   <p>
-    <%= f.label :objetivo %><br/>
+    <%= f.label :objetivo %>
     <%= f.text_area :objetivo %>
   </p>
   
@@ -24,7 +32,7 @@
 <% if Time.now.to_date >= @sprint.dtfim %> 
 <fieldset id="retrospectiva">
     <legend>Retrospectiva:</legend>	
- 
+ 	<i><p id="info_sprint">Agora que o sprint terminou, insira as impressões da equipe sobre esse sprint. </p></i>
   <p>
     <%= f.label "O que foi Bom?" %>
     <%= f.text_area :ret_bom %>
@@ -35,11 +43,13 @@
   </p>
 <% end %> 
 </fieldset>   
-  <p>
-    <%= f.submit 'Confirmar' %>
-  </p>
+	
+<div class="buttons">
+	<p><%= link_to " <img src='/images/icons/back.png' alt=""/> Voltar", sprints_path, :class => "regular"  %></p>
+	<p>	<%= f.submit "Confirmar" %>	</p>
+	<p><%= link_to " <img src='/images/icons/delete.png' alt=""/> Excluir", @sprint, :confirm => 'Deseja realmente deletar este Sprint?', :method => :delete,   :class => "negative" %></p>
+</div>
 
 <% end %>
+<% end %>
 
-<%= link_to 'Visualizar', @sprint %> |
-<%= link_to 'Voltar', sprints_path %>

@@ -9,6 +9,16 @@ class SprintsController < ApplicationController
       format.xml  { render :xml => @sprints }
     end
   end
+  
+  
+  def selectEstorias
+  	@estorias = Estoria.all # TODO pegar apenas as desse sprint e não atribuidas
+
+    respond_to do |format|
+      format.html # selectEstorias.html.erb
+      format.xml  { render :xml => @estorias }
+    end
+  end
 
   # GET /sprints/1
   # GET /sprints/1.xml
@@ -44,7 +54,7 @@ class SprintsController < ApplicationController
 
     respond_to do |format|
       if @sprint.save
-        flash[:notice] = 'Sprint was successfully created.'
+        flash[:notice] = '<img src=/images/flashes/ok.png >Sprint was successfully created.'
         format.html { redirect_to(@sprint) }
         format.xml  { render :xml => @sprint, :status => :created, :location => @sprint }
       else
@@ -61,7 +71,7 @@ class SprintsController < ApplicationController
 
     respond_to do |format|
       if @sprint.update_attributes(params[:sprint])
-        flash[:notice] = 'Sprint was successfully updated.'
+        flash[:notice] = '<img src=/images/flashes/ok.png >Sprint was successfully updated.'
         format.html { redirect_to(@sprint) }
         format.xml  { head :ok }
       else

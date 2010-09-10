@@ -1,9 +1,13 @@
+<% if logged_in? %>
+
 <ul id="menu-horizontal">
- <li> <%= link_to "Descrição", :controller => "estorias", :action => "show", :id => params[:id] %></li> 
+ <li><%= link_to "Descrição", :controller => "estorias", :action => "show", :id => params[:id] %></li> 
  <li><%= link_to "Tarefas", :controller => "tarefas", :action => "index", :estoria_id => @estoria.id %></li>
 </ul>
+
 <h1>Editar Estória</h1>
 
 <%=render :partial => 'formulario' %>
 
 
+<% end %>

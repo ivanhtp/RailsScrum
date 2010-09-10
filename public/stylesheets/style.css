@@ -22,15 +22,16 @@ body, input, textarea, #footer h4 {
 	font-family: "Avenir LT 35 Light", "Avenir 35 Light", "Avenir Light", Avenir-Light, "Futura LT Light", "Futura Light", Futura-Light, "Century Gothic LT Light", "Century Gothic Light", CenturyGothic-Light, "Avant Garde LT Light", "Avant Garde Light", AvantGarde-Light, "Twentieth Century LT Light", "Twentieth Century Light", TwentiethCentury-Light, "Helvetica Neue 35 Light", "Helvetica Neue Light", HelveticaNeue-Light, "Helvetica Neue", HelveticaNeue, "Helvetica Light", Helvetica-Light, Helvetica, Arial, sans-serif;
 	font-weight: 300; }
 h2, h5, legend, strong, th, blockquote cite, #label abbr, #navigation,  .article-navigation a, button, .button, #footer h3, .error, .success {
-	font-family: "Avenir LT 65 Medium", "Avenir 65 Medium", "Avenir Medium", Avenir-Medium, Avenir, "Futura LT Medium", "Futura Medium", Futura-Medium, Futura, "Century Gothic LT Medium", "Cantury Gothic Medium", CenturyGothic-Medium, "Century Gothic", CenturyGothic, "Avant Garde LT Medium", "Avant Garde Medium", AvantGarde-Medium, "Avant Garde", AvantGarde, "Twentieth Century LT Medium", "Twentieth Century Medium", TwentiethCentury-Medium, "Twentieth Century", TwentiethCentury, Helvetica, Arial, sans-serif;
+	font-family: "Avenir LT 65 Medium", "Avenir 65 Medium", "Avenir Medium", Avenir-Medium, Avenir, "Futura LT Medium", "Futura Medium", Futura-Medium, Futura, "Century Gothic LT Medium", "Cantury Gothic Medium", CenturyGothic-Medium, "Century Gothic", CenturyGothic, "Avant Garde LT Medium", "Avant Garde Medium", AvantGarde-Medium, "Avant Garde", AvantGarde, "Twentieth Century LT Medium", "Twentieth Century Medium", TwentiethCentury-Medium, "Twentieth Century", TwentiethCentury, Helvetica, Arial, sans-serif; 
 	font-weight: bold; }
 
 
 body {
+	background:url("/images/body-bg.jpg") repeat-x scroll left top #FCFCF7;
 	font-size: .9375em;
 	line-height: 1.333em;
 	color: #5c5c5c;
-	background-color: #E2E4DE;
+	/*background-color: #E2E4DE;*/
 	margin-top: 10px; 
 }
 
@@ -40,7 +41,7 @@ body {
 	position: absolute;
 	top: 0;
 	width: 80px;
-	background: url(images/angled-shadow-trans.png) no-repeat bottom left;
+	background: url("/images/angled-shadow-trans.png") no-repeat bottom left;
 	border-bottom: none; }
 #label abbr {
 	color: #fff;
@@ -65,12 +66,13 @@ body {
 	line-height: 1.083em;
 	text-transform: uppercase;
 	display: block;
-	margin-top: .541em; }
+	margin-top: .541em;
+}
 
 #navigation {
 	float:left;	
 	padding-top:220px;	
-	background:url("/images/logoblue.png") no-repeat scroll left top transparent;
+	background:url("/images/logo.png") no-repeat scroll left top transparent;
 	list-style:none outside none;
 	margin-left:15px;
 	position:relative;
@@ -122,61 +124,14 @@ body {
  }	
  
  
- /* Middle
------------------------------------------------------------------------------*/
-#middle {
-	width: 100%;
-	padding: 0 0 116px;
-	height: 1%;
-}
-#middle:after {
-	content: '.';
-	display: block;
-	clear: both;
-	visibility: hidden;
-	height: 0;
-}
-#container {
-	width: 100%;
-	float: left;
-	overflow: hidden;
-}
-#content_login {
-	background:url("/images/LogoFull.png") no-repeat scroll left top #E2E4DE;
-	margin:30px 0 0 30px;
-	padding:450px 0 0 0;
-	height:210px;
-}
-
-#wrapper {
-	width: 100%;
-	min-width: 1000px;
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-}
-
-/* Sidebar Right
------------------------------------------------------------------------------*/
-#sideRight {
-background:url("/images/gui/postit.png") no-repeat scroll left top #E2E4DE;
-border:medium none;
-float:left;
-height: 350px;
-margin: 80px -200px 2em -450px;
-padding:30px 10px 60px 80px;
-position:relative;
-width:400px;
-}
- 
 	
 
 #content {
-	width: auto;
-	/*520px*/
-	margin-left: 270px;
+	width: 70%;
+	margin-left: 285px;
 	overflow: auto;
-	padding-bottom: 116px; }
+	padding-bottom:130px;
+}
 
 a {
 	color: #cd0027;
@@ -298,11 +253,58 @@ blockquote cite {
 	color: #5c5c5c; 
 }
 
-fieldset {
-	width: 360px; }
-legend {
-	margin: 0;
-	padding-bottom: .769em;
+
+fieldset{
+	border-width:1px;
+	border-style:solid;
+	border-color:#333333;
+	background-color:#FFFFCC;
+	margin:20px 0px 20px 0px;
+	width:700px;
+	position:relative;
+	display:block;
+	padding: 0 10px 10px 10px;
+}
+
+fieldset legend{
+	font-weight:bold;	
+	font-size:1.333em;	
+	background-color:#FFFFFF;
+	border-width:1px;
+	border-style:solid;
+	border-color:#333333;
+	padding:2px;
+	margin:0px 0px 10px 0px;
+	position:relative;
+	top: -12px;
+}
+form fieldset{
+		border-width:1px;
+	border-style:solid;
+	border-color:#333333;
+	background-color:#FFFFCC;
+	margin:20px 0px 20px 0px;
+	width:700px;
+	position:relative;
+	display:block;
+	padding: 0 10px 10px 10px;
+}
+
+form fieldset legend{
+	font-size:1.333em;
+	font-weight:bold;		
+	background-color:#FFFFFF;
+	border-width:1px;
+	border-style:solid;
+	border-color:#333333;
+	padding:2px;
+	margin:0px 0px 10px 0px;
+	position:relative;
+	top: -12px;
+}
+	 
+form fieldset legend img{
+	padding:0px 5px 0px 5px;	
 }
 	
 	
@@ -315,28 +317,28 @@ p.error {
 	color: #fff;
 	background: #cd0027; 
 	padding: .666em;
-	display: inline-block; }/*
-input.error, textarea.error {
-	border-color: #cd0007; }
-h2.error {
-	color: #cd0007; }
-p.success {
-	background: #bebebe; }
-input, textarea {
+	display: inline-block; }
+	
+input[type="text"], input[type="password"], textarea {
+	background: url("/images/input-bg.png") no-repeat scroll left top #FFFFFF;
 	margin: .333em 0 .666em 0;
 	padding: .333em;
 	border: 1px solid #f0f0f0;
-	color: #acacac;
-	width: 360px;
-	background: #d8d8d8; 
+	color: #5c5c5c;
+	/*width: 500px;*/
 	font-size: 1em;
 	line-height: 1.333em; }
-input:focus, textarea:focus {
+	
+	
+input[type="text"]:focus, textarea:focus {
+	width: 500px;
 	color: #5c5c5c;
 	border-color: #999; }
 textarea {
+	width: 500px;
 	height: 9.311em;
-	margin-right: 160px; }*/
+	margin-right: 160px; }
+
 	
 #footer {
 	
@@ -404,6 +406,7 @@ textarea {
 	font-style: normal; }
 #footer .footer-section-2 p {
 	font-size: 1.5em;
+	width: 500px;
 	line-height: 1.111em;
 	color: #999;
 	margin: 0.111em 0 0 0; }
@@ -463,16 +466,14 @@ textarea {
 #menu-horizontal{
 	font: 90% "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
 	list-style: none;
-	margin: 10px;
-	float: right;
+	/*float: right;*/
+	margin:10px 0 0 10px;
 }
 
 #menu-horizontal li{
-float: left;
-width: 110px;
-text-align: center;
-}
-#menu-horizontal li a{
+	float: right;
+	width: 110px;
+	text-align: center;
 	background-color: #fff;
 	border-right: 1px solid #ccc;
 	color: #666;

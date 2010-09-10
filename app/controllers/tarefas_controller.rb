@@ -53,7 +53,7 @@ class TarefasController < ApplicationController
     
     respond_to do |format|
       if @tarefa.save
-        flash[:notice] = 'Tarefa was successfully created.'
+        flash[:notice] = '<img src=/images/flashes/ok.png>Tarefa criada com sucesso!'
         format.html { redirect_to :controller=>'tarefas', :action => 'show', :id => @tarefa.id, :estoria_id => @tarefa.estoria_id}
         	  
         #(:conditions => { :estoria_id => params[:estoria_id]  })
@@ -72,7 +72,7 @@ class TarefasController < ApplicationController
 
     respond_to do |format|
       if @tarefa.update_attributes(params[:tarefa])
-        flash[:notice] = 'Tarefa was successfully updated.'
+        flash[:notice] = '<img src=/images/flashes/ok.png>Tarefa atualizada com sucesso!'
         format.html { redirect_to(@tarefa) }
         format.xml  { head :ok }
       else

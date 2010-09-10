@@ -17,6 +17,14 @@
 		$("#navigation").accordion( 'activate' , false );
 	});
 	</script>
+	<script type="text/javascript">
+			$(function () {
+				$(".footer-section-2 p").effect("pulsate", {times: 4}, 500);
+			});
+
+	</script>
+
+
 	<!--[if  IE 8]>
 		<style type="text/css">
 			#wrap {display:table;}
@@ -80,9 +88,13 @@
 		</div>
 
 		<div class="footer-section-2">
-			<h3>extras</h3>
-			 
-			<p>Acharei alguma coisa interessante pra escrever aqui ainda</p>
+			<h3>infos</h3>
+			<p>
+				<% if flash[:notice] %>
+					<%= flash[:notice] %>
+				<% end %>
+			</p>
+			Logged in as <%= link_to_current_user :content_method => :login %> | <%= link_to "Log out", logout_path, { :title => "Log out" }    %>
 		</div>
 	</div>
 

@@ -1,5 +1,6 @@
-<h1>Estórias</h1>
+<% if logged_in? %>
 
+<h1>Estórias</h1>
 <table>
   <tr>
     <th>#</th>  	
@@ -20,6 +21,8 @@
 
 <div class="buttons">
   <%=  link_to " <img src='/images/icons/task.png' alt=""/> Nova estória",  new_estoria_path, :class => "regular" %>
-
 </div>
 
+<% else %>
+	<%= link_to 'Login', login_path %>   or <%= link_to 'Sign Up', signup_path %>
+<% end %>

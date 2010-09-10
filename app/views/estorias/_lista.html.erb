@@ -3,6 +3,8 @@
     <td><%=h estoria.titulo %></td>
     <td><%=h  Categoria.find(estoria.categoria_id).nome_categoria %></td>
     <td><img src="/images/gui/percentImage.png" alt=" <%= percentagem_tarefas_concluidas(:estoria_id => estoria.id, :tipo => 1) %>%" class="percentImage" style="background-position: -<%= percentagem_tarefas_concluidas(:estoria_id => estoria.id, :tipo => 2) %>px 0pt;" />&nbsp;</td>
+
+
     
     <% if !estoria.sprint_id.nil?  %> 	
 		<td id="info_sprint_cell"><%=h estoria.sprint_id %> </td>

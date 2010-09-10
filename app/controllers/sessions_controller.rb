@@ -21,8 +21,9 @@ class SessionsController < ApplicationController
       self.current_user = user
       new_cookie_flag = (params[:remember_me] == "1")
       handle_remember_cookie! new_cookie_flag
-      redirect_back_or_default('/')
-      flash[:notice] = "Logged in successfully"
+      #redirect_back_or_default('/')
+      redirect_to(estorias_path)
+      flash[:notice] = "<img src=/images/flashes/LoginOk.png>Login realizado com sucesso!"
     else
       note_failed_signin
       @login       = params[:login]
@@ -33,14 +34,14 @@ class SessionsController < ApplicationController
 
   def destroy
     logout_killing_session!
-    flash[:notice] = "You have been logged out."
+    flash[:notice] = "<img src=/images/flashes/LoginOk.png>Logout efetuado!"
     redirect_back_or_default('/')
   end
 
 protected
   # Track failed login attempts
   def note_failed_signin
-    flash[:error] = "Couldn't log you in as '#{params[:login]}'"
-    logger.warn "Failed login for '#{params[:login]}' from #{request.remote_ip} at #{Time.now.utc}"
+    flash[:error] = "<img src=/images/flashes/loginFail.png>Não foi possivel fazer seu login como '#{params[:login]}'"
+    logger.warn "Falha no login '#{params[:login]}' de #{request.remote_ip} ás #{Time.now.utc}"
   end
 end

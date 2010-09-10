@@ -1,4 +1,11 @@
-<h1>Visualizando Sprint <%=h@sprint.id %></h1>
+<% if logged_in? %>
+<ul id="menu-horizontal">
+ <li><a href="#"> --> Descrição</a></li>	
+ <li><%= link_to "Estórias", :controller => "sprints", :action => "selectEstorias", :sprint_id => @sprint.id %></li>
+ <li><a href="#"> Usuários</a></li>	
+</ul>
+
+<h1>Visualizando Sprint <%=h @sprint.id %></h1>
 
 <p>
   <b>Dtinicio:</b>
@@ -37,3 +44,5 @@
 
 <%= link_to 'Editar', edit_sprint_path(@sprint) %> |
 <%= link_to 'Voltar', sprints_path %>
+
+<% end %>
